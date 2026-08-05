@@ -10,6 +10,14 @@ A listing is matched to a model by simple keyword matching against its
 title. This is intentionally crude to start — good enough to prove the
 pipeline works end to end before investing in fuzzier matching or an
 automated pricing feed.
+
+Beginner-friendly $200-$700 lineup (researched August 2026):
+- Tissot PRX (quartz and Powermatic 80 automatic) — popular, easy comps
+- Seiko 5 Sports (SRPD line) — high trading volume, easy to spot outliers
+- Vintage Seiko 6309 "Turtle" diver — watch for franken-watches (mixed
+  or fake parts); a too-good price is often a red flag here, not a deal
+- Vintage Citizen Bullhead chronograph — top of the range, more upside
+  but more originality/authenticity risk too
 """
 
 from typing import List, Optional, Tuple
@@ -19,11 +27,11 @@ from core.models import Listing
 CATEGORY_NAME = "watches"
 
 SEARCH_TERMS: List[str] = [
-    "Rolex Submariner",
-    "Rolex Datejust",
-    "Omega Speedmaster",
-    "Omega Seamaster",
-    "Tudor Black Bay",
+    "Tissot PRX Powermatic 80",
+    "Tissot PRX quartz",
+    "Seiko 5 Sports SRPD",
+    "Seiko 6309 Turtle",
+    "Citizen Bullhead vintage",
 ]
 
 # eBay category ID for Wristwatches
@@ -35,17 +43,15 @@ MIN_DISCOUNT_PCT = 20.0
 # appear in the listing title. First match wins, so put more specific
 # entries (e.g. a specific reference number) before general ones.
 #
-# TODO: fill these in with real current comps — these are placeholders.
+# Sourced August 2026 from WatchCharts / Chrono24 / collector guides.
+# Re-check and update these every few months — used watch prices drift.
 PRICE_BANDS = {
-    "submariner 116610": (9000, 11500),
-    "submariner": (8500, 13000),
-    "datejust": (4000, 7500),
-    "speedmaster professional": (4500, 6500),
-    "speedmaster": (3500, 7000),
-    "seamaster 300": (3000, 4500),
-    "seamaster": (2500, 5000),
-    "black bay 58": (3200, 4200),
-    "black bay": (2800, 4500),
+    "prx powermatic": (400, 550),
+    "prx automatic": (400, 550),
+    "prx": (200, 400),  # catches quartz PRX listings not caught above
+    "srpd": (250, 350),
+    "6309": (250, 500),
+    "bullhead": (400, 750),
 }
 
 
