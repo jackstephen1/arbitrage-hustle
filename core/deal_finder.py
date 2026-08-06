@@ -1,7 +1,7 @@
 """
 Main runner: loops over enabled category modules, searches eBay for each
-of their search terms, scores listings against estimated value, and
-emails a summary of any deals found.
+of their search terms, scores listings against estimated value, skips
+listings already alerted on, and emails a summary of any new deals found.
 
 Run manually:
     python -m core.deal_finder
@@ -17,19 +17,56 @@ from typing import List
 
 from core.ebay_client import EbayClient
 from core.models import Deal, Listing
+from core.seen_store import load_seen, save_seen
 
 # Add new category module names here as you build them out
 # (must match the filename in categories/, without .py)
 ENABLED_CATEGORIES = [
     "watches",
-     "cameras",
+    "cameras",
     # "pokemon",
     # "sports_cards",
     # "vintage",
 ]
 
+# Title phrases that disqualify a listing regardless of price — these
+# usually mean the item isn't in sellable condition or isn't the real
+# item at all.
+JUNK_PHRASES = [
+    "for parts",
+    "not working",
+    "as is",
+    "broken",
+    "repair",
+    "replica",
+    "faux",
+    "empty box",
+    "box only",
+    "case only",
+]
+
+# Skip listings from sellers with very low feedback — higher risk of scams
+# or misrepresented condition. Set to 0 to disable this filter.
+MIN_SELLER_FEEDBACK = 5
+
+
+def is_junk_listing(listing: Listing) -> bool:
+    title_lower = listing.title.lower()
+    if any(phrase in title_lower for phrase in JUNK_PHRASES):
+        return True
+    if (
+        MIN_SELLER_FEEDBACK > 0
+        and listing.seller_feedback_score is not None
+        and listing.seller_feedback_score < MIN_SELLER_FEEDBACK
+    ):
+        return True
+    return False
+
 
 def score_listing(listing: Listing, category_module, category_name: str) -> "Deal | None":
+    if is_junk_listing(listing):
+        return None
+
     estimate = category_module.estimate_value(listing)
     if estimate is None:
         return None
@@ -52,7 +89,8 @@ def score_listing(listing: Listing, category_module, category_name: str) -> "Dea
 
 def run() -> List[Deal]:
     client = EbayClient()
-    all_deals: List[Deal] = []
+    seen_ids = load_seen()
+    new_deals: List[Deal] = []
 
     for category_name in ENABLED_CATEGORIES:
         module = importlib.import_module(f"categories.{category_name}")
@@ -70,44 +108,53 @@ def run() -> List[Deal]:
                 continue
 
             for listing in listings:
+                if listing.item_id in seen_ids:
+                    continue  # already alerted on this one before
+
                 deal = score_listing(listing, module, category_name)
                 if deal:
-                    all_deals.append(deal)
+                    new_deals.append(deal)
+                    seen_ids.add(listing.item_id)
 
-    return all_deals
+    save_seen(seen_ids)
+    return new_deals
 
 
 def send_email(deals: List[Deal]) -> None:
     if not deals:
-        print("No deals found — skipping email.")
+        print("No new deals found — skipping email.")
         return
 
-    to_addr = os.environ.get("ALERT_EMAIL_TO")
+    to_addr_raw = os.environ.get("ALERT_EMAIL_TO")
     from_addr = os.environ.get("ALERT_EMAIL_FROM")
     smtp_host = os.environ.get("SMTP_HOST")
     smtp_user = os.environ.get("SMTP_USER")
     smtp_pass = os.environ.get("SMTP_PASS")
 
-    if not all([to_addr, from_addr, smtp_host, smtp_user, smtp_pass]):
+    if not all([to_addr_raw, from_addr, smtp_host, smtp_user, smtp_pass]):
         print("Email env vars not fully set — printing deals instead:")
         for deal in deals:
             print(deal.summary_line())
         return
 
+    # ALERT_EMAIL_TO can be a single address or a comma-separated list,
+    # e.g. "you@gmail.com,partner@gmail.com"
+    to_addrs = [addr.strip() for addr in to_addr_raw.split(",") if addr.strip()]
+
     body = "\n\n".join(deal.summary_line() for deal in deals)
     msg = MIMEText(body)
-    msg["Subject"] = f"Arbitrage Finder: {len(deals)} deal(s) found"
+    msg["Subject"] = f"Arbitrage Finder: {len(deals)} new deal(s) found"
     msg["From"] = from_addr
-    msg["To"] = to_addr
+    msg["To"] = ", ".join(to_addrs)
 
     with smtplib.SMTP_SSL(smtp_host, 465) as server:
         server.login(smtp_user, smtp_pass)
-        server.sendmail(from_addr, [to_addr], msg.as_string())
+        server.sendmail(from_addr, to_addrs, msg.as_string())
 
-    print(f"Sent email with {len(deals)} deal(s).")
+    print(f"Sent email with {len(deals)} new deal(s).")
 
 
 if __name__ == "__main__":
     found = run()
-    print(f"\nFound {len(found)} deal(s) total.")
+    print(f"\nFound {len(found)} new deal(s) total.")
     send_email(found)
