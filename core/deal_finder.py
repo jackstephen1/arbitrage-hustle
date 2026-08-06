@@ -22,7 +22,7 @@ from core.models import Deal, Listing
 # (must match the filename in categories/, without .py)
 ENABLED_CATEGORIES = [
     "watches",
-    # "cameras",
+     "cameras",
     # "pokemon",
     # "sports_cards",
     # "vintage",
