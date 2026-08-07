@@ -12,6 +12,7 @@ Run on a schedule: see .github/workflows/run.yml
 import importlib
 import os
 import smtplib
+from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from typing import List
 
@@ -120,6 +121,39 @@ def run() -> List[Deal]:
     return new_deals
 
 
+def build_email_html(deals: List[Deal]) -> str:
+    cards = "\n".join(deal.as_html_card() for deal in deals)
+    return f"""
+    <div style="background:#f3f4f6;padding:24px;font-family:-apple-system,
+                BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+             style="max-width:560px;margin:0 auto;">
+        <tr>
+          <td style="padding-bottom:20px;">
+            <div style="font-size:20px;font-weight:700;color:#111827;">
+              Arbitrage Finder
+            </div>
+            <div style="font-size:14px;color:#6b7280;margin-top:4px;">
+              {len(deals)} new deal(s) found today
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {cards}
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top:8px;font-size:12px;color:#9ca3af;">
+            Automated scan of live eBay listings against estimated market value.
+            Always double-check condition and seller details before buying.
+          </td>
+        </tr>
+      </table>
+    </div>
+    """
+
+
 def send_email(deals: List[Deal]) -> None:
     if not deals:
         print("No new deals found — skipping email.")
@@ -141,11 +175,15 @@ def send_email(deals: List[Deal]) -> None:
     # e.g. "you@gmail.com,partner@gmail.com"
     to_addrs = [addr.strip() for addr in to_addr_raw.split(",") if addr.strip()]
 
-    body = "\n\n".join(deal.summary_line() for deal in deals)
-    msg = MIMEText(body)
-    msg["Subject"] = f"Arbitrage Finder: {len(deals)} new deal(s) found"
-    msg["From"] = from_addr
+    plain_body = "\n\n".join(deal.summary_line() for deal in deals)
+    html_body = build_email_html(deals)
+
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = f"{len(deals)} new arbitrage deal(s) found"
+    msg["From"] = f"Arbitrage Finder <{from_addr}>"
     msg["To"] = ", ".join(to_addrs)
+    msg.attach(MIMEText(plain_body, "plain"))
+    msg.attach(MIMEText(html_body, "html"))
 
     with smtplib.SMTP_SSL(smtp_host, 465) as server:
         server.login(smtp_user, smtp_pass)
