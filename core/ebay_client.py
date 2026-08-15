@@ -11,6 +11,7 @@ import base64
 import os
 import time
 from typing import List, Optional
+from urllib.parse import quote
 
 import requests
 
@@ -119,3 +120,35 @@ class EbayClient:
                 )
             )
         return listings
+
+    def get_item_brand(self, item_id: str) -> str:
+        """
+        Fetch a single item's details and return its declared brand
+        (e.g. "Seiko", "Citizen"), or "" if not available. Used to verify
+        a listing's actual brand matches what its title claims — some
+        sellers reuse listing templates or mislabel items, so title text
+        alone isn't reliable enough to trust for a "deal" decision.
+        """
+        token = self._get_token()
+        encoded_id = quote(item_id, safe="")
+        url = f"{self.search_url.rsplit('/item_summary', 1)[0]}/item/{encoded_id}"
+
+        try:
+            resp = requests.get(
+                url,
+                headers={
+                    "Authorization": f"Bearer {token}",
+                    "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
+                },
+                timeout=15,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception:
+            return ""
+
+        for aspect in data.get("localizedAspects", []):
+            if aspect.get("name", "").lower() == "brand":
+                return aspect.get("value", "")
+
+        return data.get("brand", "")
