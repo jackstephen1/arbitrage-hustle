@@ -125,6 +125,20 @@ def run() -> List[Deal]:
 
 def build_email_html(deals: List[Deal]) -> str:
     cards = "\n".join(deal.as_html_card() for deal in deals)
+    vault_url = os.environ.get("VAULT_URL", "")
+    vault_link_html = (
+        f"""
+        <div style="text-align:center;margin:8px 0 20px;">
+          <a href="{vault_url}"
+             style="display:inline-block;background:#ffffff;color:#111827;
+                    font-size:14px;font-weight:600;text-decoration:none;
+                    padding:10px 20px;border-radius:6px;border:1px solid #d1d5db;">
+            View full deal vault →
+          </a>
+        </div>
+        """
+        if vault_url else ""
+    )
     return f"""
     <div style="background:#f3f4f6;padding:24px;font-family:-apple-system,
                 BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
@@ -143,6 +157,11 @@ def build_email_html(deals: List[Deal]) -> str:
         <tr>
           <td>
             {cards}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {vault_link_html}
           </td>
         </tr>
         <tr>
