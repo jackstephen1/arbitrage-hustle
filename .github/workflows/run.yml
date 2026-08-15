@@ -32,6 +32,7 @@ jobs:
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          VAULT_URL: ${{ secrets.VAULT_URL }}
         run: python -m core.deal_finder
 
       - name: Save seen listings and deal log
