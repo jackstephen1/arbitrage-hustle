@@ -19,6 +19,7 @@ from typing import List
 from core.ebay_client import EbayClient
 from core.models import Deal, Listing
 from core.seen_store import load_seen, save_seen
+from core.deal_store import append_deals
 
 # Add new category module names here as you build them out
 # (must match the filename in categories/, without .py)
@@ -118,6 +119,7 @@ def run() -> List[Deal]:
                     seen_ids.add(listing.item_id)
 
     save_seen(seen_ids)
+    append_deals(new_deals)
     return new_deals
 
 
