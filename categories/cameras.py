@@ -51,6 +51,29 @@ PRICE_BANDS = {
     "x-700": (100, 200),
 }
 
+# Expected brand for each keyword — used to verify a listing's actual
+# declared brand matches what its title claims. See watches.py for why
+# this check exists: title text alone isn't reliable enough to trust.
+BRAND_BY_KEYWORD = {
+    "ae-1 program": "Canon",
+    "ae-1": "Canon",
+    "k1000": "Pentax",
+    "fm2": "Nikon",
+    "fm": "Nikon",
+    "om-1": "Olympus",
+    "x-700": "Minolta",
+}
+
+
+def expected_brand_for(listing: Listing) -> Optional[str]:
+    """Return the brand this listing's title claims to be, based on
+    which price-band keyword matched. Used for brand verification."""
+    title_lower = listing.title.lower()
+    for keyword, brand in BRAND_BY_KEYWORD.items():
+        if keyword in title_lower:
+            return brand
+    return None
+
 
 def estimate_value(listing: Listing) -> Optional[Tuple[float, float]]:
     title_lower = listing.title.lower()
