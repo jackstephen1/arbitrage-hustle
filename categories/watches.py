@@ -78,6 +78,41 @@ PRICE_BANDS = {
     "bellmatic": (250, 500),
 }
 
+# Expected brand for each keyword — used to verify a listing's actual
+# declared brand (from eBay's item data, not just its title) matches
+# what it claims to be. Titles alone aren't trustworthy: some sellers
+# reuse templates or mislabel items, so a title can say "Seiko Alpinist"
+# on a listing that's actually a different brand entirely.
+BRAND_BY_KEYWORD = {
+    "prx powermatic": "Tissot",
+    "prx automatic": "Tissot",
+    "prx": "Tissot",
+    "srpd": "Seiko",
+    "skx007": "Seiko",
+    "skx009": "Seiko",
+    "skx": "Seiko",
+    "6309": "Seiko",
+    "bullhead": "Citizen",
+    "bambino": "Orient",
+    "khaki field": "Hamilton",
+    "ds action": "Certina",
+    "alpinist": "Seiko",
+    "lord matic": "Seiko",
+    "lordmatic": "Seiko",
+    "bell-matic": "Seiko",
+    "bellmatic": "Seiko",
+}
+
+
+def expected_brand_for(listing: Listing) -> Optional[str]:
+    """Return the brand this listing's title claims to be, based on
+    which price-band keyword matched. Used for brand verification."""
+    title_lower = listing.title.lower()
+    for keyword, brand in BRAND_BY_KEYWORD.items():
+        if keyword in title_lower:
+            return brand
+    return None
+
 
 def estimate_value(listing: Listing) -> Optional[Tuple[float, float]]:
     title_lower = listing.title.lower()
