@@ -13,11 +13,14 @@ automated pricing feed.
 
 Beginner-friendly $200-$700 lineup (researched August 2026):
 - Tissot PRX (quartz and Powermatic 80 automatic) — popular, easy comps
-- Seiko 5 Sports (SRPD line) — high trading volume, easy to spot outliers
+- Seiko 5 Sports (SRPD line) and Seiko SKX007/009 — high trading volume
 - Vintage Seiko 6309 "Turtle" diver — watch for franken-watches (mixed
   or fake parts); a too-good price is often a red flag here, not a deal
 - Vintage Citizen Bullhead chronograph — top of the range, more upside
   but more originality/authenticity risk too
+- Orient Bambino, Hamilton Khaki Field Mechanical, Certina DS Action,
+  Seiko Alpinist — added to widen coverage since watches were showing
+  up far less often than cameras
 """
 
 from typing import List, Optional, Tuple
@@ -30,8 +33,14 @@ SEARCH_TERMS: List[str] = [
     "Tissot PRX Powermatic 80",
     "Tissot PRX quartz",
     "Seiko 5 Sports SRPD",
+    "Seiko SKX007",
+    "Seiko SKX009",
     "Seiko 6309 Turtle",
     "Citizen Bullhead vintage",
+    "Orient Bambino",
+    "Hamilton Khaki Field Mechanical",
+    "Certina DS Action",
+    "Seiko Alpinist",
 ]
 
 # eBay category ID for Wristwatches
@@ -50,8 +59,15 @@ PRICE_BANDS = {
     "prx automatic": (400, 550),
     "prx": (200, 400),  # catches quartz PRX listings not caught above
     "srpd": (250, 350),
+    "skx007": (280, 450),
+    "skx009": (300, 480),
+    "skx": (280, 450),  # fallback for other skx variants
     "6309": (250, 500),
     "bullhead": (400, 750),
+    "bambino": (120, 220),
+    "khaki field": (280, 420),
+    "ds action": (280, 450),
+    "alpinist": (400, 700),
 }
 
 
