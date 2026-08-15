@@ -21,6 +21,8 @@ Beginner-friendly $200-$700 lineup (researched August 2026):
 - Orient Bambino, Hamilton Khaki Field Mechanical, Certina DS Action,
   Seiko Alpinist — added to widen coverage since watches were showing
   up far less often than cameras
+- Seiko Lord Matic and Bell-Matic — vintage automatics, still under-the-
+  radar relative to other vintage Seikos, good arbitrage candidates
 """
 
 from typing import List, Optional, Tuple
@@ -41,6 +43,8 @@ SEARCH_TERMS: List[str] = [
     "Hamilton Khaki Field Mechanical",
     "Certina DS Action",
     "Seiko Alpinist",
+    "Seiko Lord Matic",
+    "Seiko Bell-Matic",
 ]
 
 # eBay category ID for Wristwatches
@@ -68,6 +72,10 @@ PRICE_BANDS = {
     "khaki field": (280, 420),
     "ds action": (280, 450),
     "alpinist": (400, 700),
+    "lord matic": (200, 450),
+    "lordmatic": (200, 450),
+    "bell-matic": (250, 500),
+    "bellmatic": (250, 500),
 }
 
 
