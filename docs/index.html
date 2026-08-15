@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arbitrage Vault</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: #f3f4f6;
+    color: #111827;
+  }
+  header {
+    background: #111827;
+    color: white;
+    padding: 24px 20px;
+  }
+  header h1 { margin: 0; font-size: 22px; }
+  header p { margin: 6px 0 0; color: #9ca3af; font-size: 14px; }
+
+  .tabs {
+    display: flex;
+    gap: 8px;
+    padding: 16px 20px 0;
+    flex-wrap: wrap;
+  }
+  .tab {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #6b7280;
+  }
+  .tab.active {
+    background: #111827;
+    color: white;
+    border-color: #111827;
+  }
+
+  .grid {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+
+  .card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    background: #f3f4f6;
+  }
+  .badge {
+    display: inline-block;
+    background: #eef2ff;
+    color: #4338ca;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 999px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    align-self: flex-start;
+  }
+  .title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+  .meta { font-size: 12px; color: #6b7280; margin-bottom: 8px; }
+  .price-row { margin: 8px 0; }
+  .price { font-size: 20px; font-weight: 700; }
+  .est { font-size: 13px; color: #6b7280; margin-left: 6px; }
+  .discount {
+    display: inline-block;
+    background: #dcfce7;
+    color: #166534;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    align-self: flex-start;
+  }
+  .actions { margin-top: auto; display: flex; gap: 8px; }
+  .btn {
+    flex: 1;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+  }
+  .btn-view { background: #111827; color: white; }
+  .btn-sold { background: #f3f4f6; color: #6b7280; border: 1px solid #e5e7eb; }
+  .btn-sold:hover { background: #fee2e2; color: #991b1b; }
+
+  .empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: #9ca3af;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Arbitrage Vault</h1>
+  <p>Every deal your scanner has found. Mark items sold to clear them out.</p>
+</header>
+
+<div class="tabs" id="tabs"></div>
+<div class="grid" id="grid"></div>
+
+<script>
+const SOLD_KEY = 'arbitrage_vault_sold_ids';
+
+function getSoldIds() {
+  try {
+    return new Set(JSON.parse(localStorage.getItem(SOLD_KEY) || '[]'));
+  } catch (e) {
+    return new Set();
+  }
+}
+
+function markSold(id) {
+  const sold = getSoldIds();
+  sold.add(id);
+  localStorage.setItem(SOLD_KEY, JSON.stringify([...sold]));
+  render();
+}
+
+let allDeals = [];
+let activeCategory = 'all';
+
+function categories() {
+  const cats = new Set(allDeals.map(d => d.category));
+  return ['all', ...cats];
+}
+
+function renderTabs() {
+  const tabsEl = document.getElementById('tabs');
+  tabsEl.innerHTML = '';
+  categories().forEach(cat => {
+    const btn = document.createElement('div');
+    btn.className = 'tab' + (cat === activeCategory ? ' active' : '');
+    btn.textContent = cat === 'all' ? 'All' : cat;
+    btn.onclick = () => { activeCategory = cat; render(); };
+    tabsEl.appendChild(btn);
+  });
+}
+
+function render() {
+  renderTabs();
+  const sold = getSoldIds();
+  const gridEl = document.getElementById('grid');
+  gridEl.innerHTML = '';
+
+  const visible = allDeals
+    .filter(d => !sold.has(d.id))
+    .filter(d => activeCategory === 'all' || d.category === activeCategory)
+    .sort((a, b) => new Date(b.date_found) - new Date(a.date_found));
+
+  if (visible.length === 0) {
+    gridEl.innerHTML = '<div class="empty">No deals here right now.</div>';
+    return;
+  }
+
+  visible.forEach(d => {
+    const card = document.createElement('div');
+    card.className = 'card';
+
+    const img = d.image_url
+      ? `<img src="${d.image_url}" alt="">`
+      : '';
+
+    const seller = d.seller_username
+      ? `Seller: ${d.seller_username} (${d.seller_feedback_score ?? '?'} feedback)`
+      : '';
+
+    const foundDate = d.date_found
+      ? new Date(d.date_found).toLocaleDateString()
+      : '';
+
+    card.innerHTML = `
+      <span class="badge">${d.category}</span>
+      ${img}
+      <div class="title">${d.title}</div>
+      <div class="meta">${seller}${seller ? ' · ' : ''}Found ${foundDate}</div>
+      <div class="price-row">
+        <span class="price">$${Number(d.price).toLocaleString()}</span>
+        <span class="est">est. $${Number(d.estimated_value_low).toLocaleString()}–$${Number(d.estimated_value_high).toLocaleString()}</span>
+      </div>
+      <span class="discount">${Math.round(d.discount_pct)}% below estimated low value</span>
+      <div class="actions">
+        <a class="btn btn-view" href="${d.url}" target="_blank" rel="noopener">View listing</a>
+        <button class="btn btn-sold" data-id="${d.id}">Mark sold</button>
+      </div>
+    `;
+
+    card.querySelector('.btn-sold').addEventListener('click', () => markSold(d.id));
+    gridEl.appendChild(card);
+  });
+}
+
+fetch('./deals_log.json')
+  .then(res => res.json())
+  .then(data => {
+    allDeals = data;
+    render();
+  })
+  .catch(() => {
+    document.getElementById('grid').innerHTML =
+      '<div class="empty">Could not load deals_log.json yet — it will appear here after the scanner finds its first deal.</div>';
+  });
+</script>
+
+</body>
+</html>
