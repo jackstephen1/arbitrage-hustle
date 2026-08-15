@@ -65,6 +65,28 @@ def is_junk_listing(listing: Listing) -> bool:
     return False
 
 
+def verify_brand(client: EbayClient, category_module, listing: Listing) -> bool:
+    """
+    Confirm a candidate deal's actual eBay-declared brand matches what
+    its title claims. Only called for listings that already passed the
+    price filter, to keep the extra API call cheap. If the category
+    module doesn't define expected brands, this passes through (True).
+    """
+    expected_fn = getattr(category_module, "expected_brand_for", None)
+    if expected_fn is None:
+        return True
+
+    expected = expected_fn(listing)
+    if expected is None:
+        return True  # no brand mapping matched — nothing to verify against
+
+    actual = client.get_item_brand(listing.item_id)
+    if not actual:
+        return True  # eBay didn't return brand data — can't verify, don't block
+
+    return expected.lower() in actual.lower() or actual.lower() in expected.lower()
+
+
 def score_listing(listing: Listing, category_module, category_name: str) -> "Deal | None":
     if is_junk_listing(listing):
         return None
@@ -115,6 +137,10 @@ def run() -> List[Deal]:
 
                 deal = score_listing(listing, module, category_name)
                 if deal:
+                    if not verify_brand(client, module, listing):
+                        print(f"    Skipped (brand mismatch): {listing.title}")
+                        seen_ids.add(listing.item_id)  # don't re-check it every day
+                        continue
                     new_deals.append(deal)
                     seen_ids.add(listing.item_id)
 
