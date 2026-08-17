@@ -23,6 +23,9 @@ Beginner-friendly $200-$700 lineup (researched August 2026):
   up far less often than cameras
 - Seiko Lord Matic and Bell-Matic — vintage automatics, still under-the-
   radar relative to other vintage Seikos, good arbitrage candidates
+- Longines Conquest and Hamilton Khaki Field Titanium — added to push
+  into the $300-700 tier specifically, better brand recognition/resale
+  liquidity than the entry-level picks above
 """
 
 from typing import List, Optional, Tuple
@@ -45,6 +48,8 @@ SEARCH_TERMS: List[str] = [
     "Seiko Alpinist",
     "Seiko Lord Matic",
     "Seiko Bell-Matic",
+    "Longines Conquest",
+    "Hamilton Khaki Field Titanium",
 ]
 
 # eBay category ID for Wristwatches
@@ -76,6 +81,8 @@ PRICE_BANDS = {
     "lordmatic": (200, 450),
     "bell-matic": (250, 500),
     "bellmatic": (250, 500),
+    "conquest": (450, 700),
+    "khaki field titanium": (400, 600),
 }
 
 # Expected brand for each keyword — used to verify a listing's actual
@@ -101,6 +108,8 @@ BRAND_BY_KEYWORD = {
     "lordmatic": "Seiko",
     "bell-matic": "Seiko",
     "bellmatic": "Seiko",
+    "conquest": "Longines",
+    "khaki field titanium": "Hamilton",
 }
 
 
