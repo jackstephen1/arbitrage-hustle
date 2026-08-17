@@ -55,7 +55,7 @@ SEARCH_TERMS: List[str] = [
 # eBay category ID for Wristwatches
 CATEGORY_ID: Optional[str] = "31387"
 
-MIN_DISCOUNT_PCT = 20.0
+MIN_DISCOUNT_PCT = 25.0
 
 # Manual price bands (USD), keyed by a lowercase keyword that should
 # appear in the listing title. First match wins, so put more specific
