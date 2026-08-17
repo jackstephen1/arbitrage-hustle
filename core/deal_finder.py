@@ -1,7 +1,8 @@
 """
 Main runner: loops over enabled category modules, searches eBay for each
-of their search terms, scores listings against estimated value, skips
-listings already alerted on, and emails a summary of any new deals found.
+of their search terms, scores listings against estimated resale value
+(factoring in shipping cost and estimated resale fees), skips listings
+already alerted on, and emails a summary of any new deals found.
 
 Run manually:
     python -m core.deal_finder
@@ -51,6 +52,11 @@ JUNK_PHRASES = [
 # or misrepresented condition. Set to 0 to disable this filter.
 MIN_SELLER_FEEDBACK = 5
 
+# Estimated cost of reselling on eBay: final value fee (~13%) plus
+# payment processing (~3%). Applied to the resale price when estimating
+# real profit — a "deal" on paper can still be a loss after these.
+RESALE_FEE_PCT = 0.15
+
 
 def is_junk_listing(listing: Listing) -> bool:
     title_lower = listing.title.lower()
@@ -96,17 +102,31 @@ def score_listing(listing: Listing, category_module, category_name: str) -> "Dea
         return None
 
     low, high = estimate
-    if listing.price <= 0 or low <= 0:
+    landed_cost = listing.price + listing.shipping_cost
+    if landed_cost <= 0 or low <= 0:
         return None
 
-    discount_pct = (low - listing.price) / low * 100
-    if discount_pct >= category_module.MIN_DISCOUNT_PCT:
+    # Discount is measured against landed cost (price + shipping), not
+    # just the listing price — a "cheap" item with expensive shipping
+    # might not actually be a deal at all.
+    discount_pct = (low - landed_cost) / low * 100
+
+    net_profit_low = (low * (1 - RESALE_FEE_PCT)) - landed_cost
+    net_profit_high = (high * (1 - RESALE_FEE_PCT)) - landed_cost
+
+    # Require both: a big enough discount AND actual positive profit
+    # after resale fees. A high discount_pct with thin/negative profit
+    # (cheap item, but resale value is also low) shouldn't count.
+    if discount_pct >= category_module.MIN_DISCOUNT_PCT and net_profit_low > 0:
         return Deal(
             listing=listing,
             category=category_name,
             estimated_value_low=low,
             estimated_value_high=high,
             discount_pct=discount_pct,
+            landed_cost=landed_cost,
+            net_profit_low=net_profit_low,
+            net_profit_high=net_profit_high,
         )
     return None
 
@@ -192,8 +212,9 @@ def build_email_html(deals: List[Deal]) -> str:
         </tr>
         <tr>
           <td style="padding-top:8px;font-size:12px;color:#9ca3af;">
-            Automated scan of live eBay listings against estimated market value.
-            Always double-check condition and seller details before buying.
+            Automated scan of live eBay listings against estimated market value,
+            after shipping cost and an estimated 15% resale fee. Always
+            double-check condition and seller details before buying.
           </td>
         </tr>
       </table>
