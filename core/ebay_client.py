@@ -106,6 +106,15 @@ class EbayClient:
             seller_info = item.get("seller", {})
             image_info = item.get("image", {})
 
+            shipping_cost = 0.0
+            shipping_options = item.get("shippingOptions", [])
+            if shipping_options:
+                cost_info = shipping_options[0].get("shippingCost", {})
+                try:
+                    shipping_cost = float(cost_info.get("value", 0))
+                except (TypeError, ValueError):
+                    shipping_cost = 0.0
+
             listings.append(
                 Listing(
                     item_id=item.get("itemId", ""),
@@ -117,6 +126,7 @@ class EbayClient:
                     image_url=image_info.get("imageUrl"),
                     seller_username=seller_info.get("username"),
                     seller_feedback_score=seller_info.get("feedbackScore"),
+                    shipping_cost=shipping_cost,
                 )
             )
         return listings
