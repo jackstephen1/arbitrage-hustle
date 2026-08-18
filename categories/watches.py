@@ -29,6 +29,8 @@ Beginner-friendly $200-$700 lineup (researched August 2026):
 - Bulova Jet Star — modern Precisionist quartz reissue, under-the-radar
 - Citizen Tsuyosa — very popular "Datejust homage," strong demand/
   liquidity, though used resale runs a bit below the $300 floor
+- Seiko 5 Sports GMT (SSK series) — affordable true-GMT automatic,
+  strong demand, retails $350-450 new
 """
 
 from typing import List, Optional, Tuple
@@ -55,6 +57,7 @@ SEARCH_TERMS: List[str] = [
     "Hamilton Khaki Field Titanium",
     "Bulova Jet Star",
     "Citizen Tsuyosa",
+    "Seiko 5 Sports GMT",
 ]
 
 # eBay category ID for Wristwatches
@@ -90,6 +93,8 @@ PRICE_BANDS = {
     "khaki field titanium": (400, 600),
     "jet star": (300, 450),
     "tsuyosa": (220, 320),
+    "5 sports gmt": (280, 420),
+    "sports gmt": (280, 420),
 }
 
 # Expected brand for each keyword — used to verify a listing's actual
@@ -119,6 +124,8 @@ BRAND_BY_KEYWORD = {
     "khaki field titanium": "Hamilton",
     "jet star": "Bulova",
     "tsuyosa": "Citizen",
+    "5 sports gmt": "Seiko",
+    "sports gmt": "Seiko",
 }
 
 
