@@ -2,8 +2,11 @@ name: Run Arbitrage Finder
 
 on:
   schedule:
-    # Runs at 13:00 UTC daily (adjust as you like) — set secrets below first
+    # Runs 4x daily (7am, 1pm, 5pm, 9pm UTC) to catch more new listings
+    - cron: "0 7 * * *"
     - cron: "0 13 * * *"
+    - cron: "0 17 * * *"
+    - cron: "0 21 * * *"
   workflow_dispatch: {}  # lets you trigger it manually from the Actions tab
 
 permissions:
