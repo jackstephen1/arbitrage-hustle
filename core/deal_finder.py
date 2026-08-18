@@ -58,10 +58,23 @@ MIN_SELLER_FEEDBACK = 5
 RESALE_FEE_PCT = 0.15
 
 
+# Condition values (from eBay's own condition field, not just title text)
+# that disqualify a listing regardless of price.
+JUNK_CONDITIONS = [
+    "for parts or not working",
+    "for parts",
+    "not working",
+]
+
+
 def is_junk_listing(listing: Listing) -> bool:
     title_lower = listing.title.lower()
     if any(phrase in title_lower for phrase in JUNK_PHRASES):
         return True
+    if listing.condition:
+        condition_lower = listing.condition.lower()
+        if any(phrase in condition_lower for phrase in JUNK_CONDITIONS):
+            return True
     if (
         MIN_SELLER_FEEDBACK > 0
         and listing.seller_feedback_score is not None
