@@ -536,5 +536,43 @@
     "seller_username": "pe-donah",
     "seller_feedback_score": 1521,
     "date_found": "2026-08-17T19:22:39.659717+00:00"
+  },
+  {
+    "id": "v1|407151962241|0",
+    "category": "watches",
+    "title": "Seiko Lord Matic Vintage 1960s Automatic 23J Silver Dial 36mm Steel Beige",
+    "condition": "Pre-owned - Fair",
+    "price": 145.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 145.0,
+    "estimated_value_low": 200,
+    "estimated_value_high": 450,
+    "net_profit_low": 25.0,
+    "net_profit_high": 237.5,
+    "discount_pct": 27.500000000000004,
+    "url": "https://www.ebay.com/itm/407151962241?_skw=Seiko+Lord+Matic&hash=item5ecc25e881:g:C8oAAeSwMf5qg4Jo",
+    "image_url": "https://i.ebayimg.com/images/g/C8oAAeSwMf5qg4Jo/s-l225.jpg",
+    "seller_username": "mich_760649",
+    "seller_feedback_score": 5,
+    "date_found": "2026-08-18T01:35:12.322140+00:00"
+  },
+  {
+    "id": "v1|257636268866|0",
+    "category": "cameras",
+    "title": "Canon AE-1 Program 35mm Film Camera w/Quantaray CN Auto Zoom Lens and Flash",
+    "condition": "Used",
+    "price": 76.99,
+    "shipping_cost": 11.99,
+    "landed_cost": 88.97999999999999,
+    "estimated_value_low": 120,
+    "estimated_value_high": 220,
+    "net_profit_low": 13.02000000000001,
+    "net_profit_high": 98.02000000000001,
+    "discount_pct": 25.850000000000005,
+    "url": "https://www.ebay.com/itm/257636268866?_skw=Canon+AE-1+35mm&hash=item3bfc517b42:g:RxcAAeSw7kpp6SfC",
+    "image_url": "https://i.ebayimg.com/images/g/RxcAAeSw7kpp6SfC/s-l225.jpg",
+    "seller_username": "bankers_bargains",
+    "seller_feedback_score": 4776,
+    "date_found": "2026-08-18T01:35:12.322140+00:00"
   }
 ]
