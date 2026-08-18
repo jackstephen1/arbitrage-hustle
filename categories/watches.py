@@ -26,6 +26,9 @@ Beginner-friendly $200-$700 lineup (researched August 2026):
 - Longines Conquest and Hamilton Khaki Field Titanium — added to push
   into the $300-700 tier specifically, better brand recognition/resale
   liquidity than the entry-level picks above
+- Bulova Jet Star — modern Precisionist quartz reissue, under-the-radar
+- Citizen Tsuyosa — very popular "Datejust homage," strong demand/
+  liquidity, though used resale runs a bit below the $300 floor
 """
 
 from typing import List, Optional, Tuple
@@ -50,12 +53,14 @@ SEARCH_TERMS: List[str] = [
     "Seiko Bell-Matic",
     "Longines Conquest",
     "Hamilton Khaki Field Titanium",
+    "Bulova Jet Star",
+    "Citizen Tsuyosa",
 ]
 
 # eBay category ID for Wristwatches
 CATEGORY_ID: Optional[str] = "31387"
 
-MIN_DISCOUNT_PCT = 25.0
+MIN_DISCOUNT_PCT = 25.0  # raised from 20% now that watches target pricier $300-700 tier
 
 # Manual price bands (USD), keyed by a lowercase keyword that should
 # appear in the listing title. First match wins, so put more specific
@@ -83,6 +88,8 @@ PRICE_BANDS = {
     "bellmatic": (250, 500),
     "conquest": (450, 700),
     "khaki field titanium": (400, 600),
+    "jet star": (300, 450),
+    "tsuyosa": (220, 320),
 }
 
 # Expected brand for each keyword — used to verify a listing's actual
@@ -110,6 +117,8 @@ BRAND_BY_KEYWORD = {
     "bellmatic": "Seiko",
     "conquest": "Longines",
     "khaki field titanium": "Hamilton",
+    "jet star": "Bulova",
+    "tsuyosa": "Citizen",
 }
 
 
