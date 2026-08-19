@@ -1011,5 +1011,43 @@
     "seller_username": "leehaze",
     "seller_feedback_score": 7663,
     "date_found": "2026-08-19T17:21:45.908934+00:00"
+  },
+  {
+    "id": "v1|128031683557|0",
+    "category": "watches",
+    "title": "Citizen Tsuyosa - NJ0151-88Z - Automatic - Orange Dial",
+    "condition": "New without box or papers",
+    "price": 169.15,
+    "shipping_cost": 0.0,
+    "landed_cost": 169.15,
+    "estimated_value_low": 220,
+    "estimated_value_high": 320,
+    "net_profit_low": 17.849999999999994,
+    "net_profit_high": 102.85,
+    "discount_pct": 23.11363636363636,
+    "url": "https://www.ebay.com/itm/128031683557?_skw=Citizen+Tsuyosa&hash=item1dcf4873e5:g:bFAAAeSwndxqg2v4",
+    "image_url": "https://i.ebayimg.com/images/g/bFAAAeSwndxqg2v4/s-l225.jpg",
+    "seller_username": "irf-iah0",
+    "seller_feedback_score": 323,
+    "date_found": "2026-08-19T21:16:57.704642+00:00"
+  },
+  {
+    "id": "v1|377433013372|0",
+    "category": "cameras",
+    "title": "Canon AE-1 Program 35MM Film Camera",
+    "condition": "Used",
+    "price": 89.99,
+    "shipping_cost": 0.0,
+    "landed_cost": 89.99,
+    "estimated_value_low": 120,
+    "estimated_value_high": 220,
+    "net_profit_low": 12.010000000000005,
+    "net_profit_high": 97.01,
+    "discount_pct": 25.008333333333336,
+    "url": "https://www.ebay.com/itm/377433013372?_skw=Canon+AE-1+35mm&hash=item57e0c2bc7c:g:Vo8AAeSwcZxqhfAu",
+    "image_url": "https://i.ebayimg.com/images/g/Vo8AAeSwcZxqhfAu/s-l225.jpg",
+    "seller_username": "paymore_westport",
+    "seller_feedback_score": 3055,
+    "date_found": "2026-08-19T21:16:57.704642+00:00"
   }
 ]
