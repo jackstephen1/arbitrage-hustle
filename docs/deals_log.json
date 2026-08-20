@@ -1353,5 +1353,43 @@
     "seller_username": "pickwisco",
     "seller_feedback_score": 5470,
     "date_found": "2026-08-20T13:50:44.287848+00:00"
+  },
+  {
+    "id": "v1|318759679967|0",
+    "category": "watches",
+    "title": "Seiko 5 Sports 42.5mm Men's Automatic Dive Watch Blue Dial and Bezel SRPD93",
+    "condition": "Pre-owned - Good",
+    "price": 180.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 180.0,
+    "estimated_value_low": 250,
+    "estimated_value_high": 350,
+    "net_profit_low": 32.5,
+    "net_profit_high": 117.5,
+    "discount_pct": 28.000000000000004,
+    "url": "https://www.ebay.com/itm/318759679967?_skw=Seiko+5+Sports+SRPD&hash=item4a378eb7df:g:mGAAAeSw9fJqhy2V",
+    "image_url": "https://i.ebayimg.com/images/g/mGAAAeSw9fJqhy2V/s-l225.jpg",
+    "seller_username": "rrotation.seven",
+    "seller_feedback_score": 1870,
+    "date_found": "2026-08-20T17:23:28.179500+00:00"
+  },
+  {
+    "id": "v1|366618554732|0",
+    "category": "cameras",
+    "title": "Canon AE-1 Program 35MM Film Camera",
+    "condition": "Used",
+    "price": 74.99,
+    "shipping_cost": 0.0,
+    "landed_cost": 74.99,
+    "estimated_value_low": 120,
+    "estimated_value_high": 220,
+    "net_profit_low": 27.010000000000005,
+    "net_profit_high": 112.01,
+    "discount_pct": 37.50833333333334,
+    "url": "https://www.ebay.com/itm/366618554732?_skw=Canon+AE-1+35mm&hash=item555c2b316c:g:D5gAAeSwT-hqhyJr",
+    "image_url": "https://i.ebayimg.com/images/g/D5gAAeSwT-hqhyJr/s-l225.jpg",
+    "seller_username": "paymore_dayton_south",
+    "seller_feedback_score": 3724,
+    "date_found": "2026-08-20T17:23:28.179500+00:00"
   }
 ]
