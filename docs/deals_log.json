@@ -1486,5 +1486,43 @@
     "seller_username": "japan-vintage-cameras-and-watch",
     "seller_feedback_score": 747,
     "date_found": "2026-08-21T13:49:34.104001+00:00"
+  },
+  {
+    "id": "v1|318608633990|0",
+    "category": "watches",
+    "title": "*NEAR MINT* Longines Conquest L1.114.3 White Dial Quartz Women's Watch JAPAN",
+    "condition": "Pre-owned - Good",
+    "price": 219.99,
+    "shipping_cost": 50.0,
+    "landed_cost": 269.99,
+    "estimated_value_low": 450,
+    "estimated_value_high": 700,
+    "net_profit_low": 112.50999999999999,
+    "net_profit_high": 325.01,
+    "discount_pct": 40.00222222222222,
+    "url": "https://www.ebay.com/itm/318608633990?_skw=Longines+Conquest&hash=item4a2e8df086:g:XA4AAeSwQw5qXcxS&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYjIr2FuLggt2GjrqmyVy72mCY0UK8lGWnpKVY5EM9ZWzzDC51SeFuNU6c3ytMhP0571kGJZyQ1L1gJmxQOgQSmUshnOo6r8BJfNl286%2FQCLrfXxBjd72WpuozLLUrRlmaysHHCLQgg%2F6eeZzxdQRCU6X37Ll4Q3znKD13Ng7zwYebLLnFqvZG7w7z2sSPk8bJ%2Bxm2POsitAVjA%2FwiBU%2BEqYr2cEdsHGCMBVjGvMdKJQQdxw1reE2AYNrRRrx9VNHzxMyNsSNnixnOwi%2FWNaYDd7l%2BM2JoO%2BHTD3zRBaB%2F2oQ%3D%3D",
+    "image_url": "https://i.ebayimg.com/images/g/XA4AAeSwQw5qXcxS/s-l225.jpg",
+    "seller_username": "taka_japan_collection",
+    "seller_feedback_score": 522,
+    "date_found": "2026-08-21T17:23:04.293987+00:00"
+  },
+  {
+    "id": "v1|377320318255|0",
+    "category": "cameras",
+    "title": "Minolta X-700 MPS Black Camera Body with Minolta Md 50mm Lens UNTESTED",
+    "condition": "Used",
+    "price": 49.99,
+    "shipping_cost": 9.99,
+    "landed_cost": 59.980000000000004,
+    "estimated_value_low": 100,
+    "estimated_value_high": 200,
+    "net_profit_low": 25.019999999999996,
+    "net_profit_high": 110.02,
+    "discount_pct": 40.019999999999996,
+    "url": "https://www.ebay.com/itm/377320318255?_skw=Minolta+X-700&hash=item57da0b252f:g:49sAAeSw4qRqSp6C",
+    "image_url": "https://i.ebayimg.com/images/g/49sAAeSw4qRqSp6C/s-l225.jpg",
+    "seller_username": "prepa_4130",
+    "seller_feedback_score": 11615,
+    "date_found": "2026-08-21T17:23:04.293987+00:00"
   }
 ]
