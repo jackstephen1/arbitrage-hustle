@@ -1581,5 +1581,43 @@
     "seller_username": "paymore_gurnee",
     "seller_feedback_score": 6809,
     "date_found": "2026-08-21T21:14:44.539982+00:00"
+  },
+  {
+    "id": "v1|377440083951|0",
+    "category": "cameras",
+    "title": "OLYMPUS OM-1n 35MM SLR BODY W/ ORIGINAL CAP",
+    "condition": "Used",
+    "price": 68.5,
+    "shipping_cost": 0.0,
+    "landed_cost": 68.5,
+    "estimated_value_low": 120,
+    "estimated_value_high": 250,
+    "net_profit_low": 33.5,
+    "net_profit_high": 144.0,
+    "discount_pct": 42.916666666666664,
+    "url": "https://www.ebay.com/itm/377440083951?_skw=Olympus+OM-1&hash=item57e12e9fef:g:u3AAAeSwmX1qiTOg",
+    "image_url": "https://i.ebayimg.com/images/g/u3AAAeSwmX1qiTOg/s-l225.jpg",
+    "seller_username": "brtcarguy",
+    "seller_feedback_score": 24445,
+    "date_found": "2026-08-22T07:34:56.869362+00:00"
+  },
+  {
+    "id": "v1|376909705011|0",
+    "category": "cameras",
+    "title": "Minolta X-700 35mm Film Camera w/ MD 200mm 1:4 Lens & Strap - Untested",
+    "condition": "Used",
+    "price": 31.25,
+    "shipping_cost": 10.0,
+    "landed_cost": 41.25,
+    "estimated_value_low": 100,
+    "estimated_value_high": 200,
+    "net_profit_low": 43.75,
+    "net_profit_high": 128.75,
+    "discount_pct": 58.75,
+    "url": "https://www.ebay.com/itm/376909705011?_skw=Minolta+X-700&hash=item57c191af33:g:j0YAAeSw7WZpem26",
+    "image_url": "https://i.ebayimg.com/images/g/j0YAAeSw7WZpem26/s-l225.jpg",
+    "seller_username": "mandyrodgers",
+    "seller_feedback_score": 3204,
+    "date_found": "2026-08-22T07:34:56.869362+00:00"
   }
 ]
