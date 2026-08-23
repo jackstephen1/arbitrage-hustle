@@ -33,8 +33,9 @@ ENABLED_CATEGORIES = [
 ]
 
 # Title phrases that disqualify a listing regardless of price — these
-# usually mean the item isn't in sellable condition or isn't the real
-# item at all.
+# usually mean the item isn't in sellable condition, isn't the real
+# item at all, or isn't a category we're hunting (men's sport/automatic
+# watches — not women's watches, which are a different market segment).
 JUNK_PHRASES = [
     "for parts",
     "not working",
@@ -46,6 +47,18 @@ JUNK_PHRASES = [
     "empty box",
     "box only",
     "case only",
+    "women's",
+    "womens",
+    "ladies",
+    "women watch",
+]
+
+# Condition values (from eBay's own condition field, not just title text)
+# that disqualify a listing regardless of price.
+JUNK_CONDITIONS = [
+    "for parts or not working",
+    "for parts",
+    "not working",
 ]
 
 # Skip listings from sellers with very low feedback — higher risk of scams
@@ -56,15 +69,6 @@ MIN_SELLER_FEEDBACK = 5
 # payment processing (~3%). Applied to the resale price when estimating
 # real profit — a "deal" on paper can still be a loss after these.
 RESALE_FEE_PCT = 0.15
-
-
-# Condition values (from eBay's own condition field, not just title text)
-# that disqualify a listing regardless of price.
-JUNK_CONDITIONS = [
-    "for parts or not working",
-    "for parts",
-    "not working",
-]
 
 
 def is_junk_listing(listing: Listing) -> bool:
