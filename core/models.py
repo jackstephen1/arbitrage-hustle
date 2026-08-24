@@ -17,6 +17,7 @@ class Listing:
     seller_username: Optional[str]
     seller_feedback_score: Optional[int]
     shipping_cost: float = 0.0
+    ebay_category: Optional[str] = None  # eBay's own leaf category name, e.g. "Wristwatches"
 
 
 @dataclass
