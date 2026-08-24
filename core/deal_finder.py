@@ -34,8 +34,8 @@ ENABLED_CATEGORIES = [
 
 # Title phrases that disqualify a listing regardless of price — these
 # usually mean the item isn't in sellable condition, isn't the real
-# item at all, or isn't a category we're hunting (men's sport/automatic
-# watches — not women's watches, which are a different market segment).
+# item at all, isn't a complete item (accessories/parts), or isn't a
+# category we're hunting (men's sport/automatic watches).
 JUNK_PHRASES = [
     "for parts",
     "not working",
@@ -51,6 +51,12 @@ JUNK_PHRASES = [
     "womens",
     "ladies",
     "women watch",
+    "compatible with",
+    "compatible models",
+    "bracelet only",
+    "strap only",
+    "band only",
+    "accessory",
 ]
 
 # Condition values (from eBay's own condition field, not just title text)
@@ -59,6 +65,20 @@ JUNK_CONDITIONS = [
     "for parts or not working",
     "for parts",
     "not working",
+]
+
+# eBay's own leaf category names (not just the category_id search filter)
+# that mean this is an accessory/part, not the complete item. Checked as
+# a second safety layer in case eBay ever miscategorizes something —
+# this is what would have caught the "Alpinist bracelet, not the watch"
+# mixup, since its title alone read like a complete watch.
+JUNK_CATEGORIES = [
+    "accessor",
+    "band",
+    "strap",
+    "bracelet",
+    "parts",
+    "case",  # watch cases sold standalone, not the "case only" phrase above
 ]
 
 # Skip listings from sellers with very low feedback — higher risk of scams
@@ -78,6 +98,12 @@ def is_junk_listing(listing: Listing) -> bool:
     if listing.condition:
         condition_lower = listing.condition.lower()
         if any(phrase in condition_lower for phrase in JUNK_CONDITIONS):
+            return True
+    if listing.ebay_category:
+        category_lower = listing.ebay_category.lower()
+        # "Wristwatches" contains none of the junk substrings, so this is
+        # safe — it only trips for genuine accessory/parts categories.
+        if any(phrase in category_lower for phrase in JUNK_CATEGORIES):
             return True
     if (
         MIN_SELLER_FEEDBACK > 0
