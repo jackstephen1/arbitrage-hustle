@@ -115,6 +115,15 @@ class EbayClient:
                 except (TypeError, ValueError):
                     shipping_cost = 0.0
 
+            # eBay's own leaf category name for this listing (e.g.
+            # "Wristwatches" vs "Watch Accessories") — used as a second
+            # safety check beyond the category_id search filter, in case
+            # eBay ever miscategorizes an item.
+            ebay_category = None
+            categories = item.get("categories", [])
+            if categories:
+                ebay_category = categories[0].get("categoryName")
+
             listings.append(
                 Listing(
                     item_id=item.get("itemId", ""),
@@ -127,6 +136,7 @@ class EbayClient:
                     seller_username=seller_info.get("username"),
                     seller_feedback_score=seller_info.get("feedbackScore"),
                     shipping_cost=shipping_cost,
+                    ebay_category=ebay_category,
                 )
             )
         return listings
