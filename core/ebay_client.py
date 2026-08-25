@@ -10,7 +10,7 @@ Docs: https://developer.ebay.com/api-docs/buy/browse/resources/item_summary/meth
 import base64
 import os
 import time
-from typing import List, Optional
+from typing import List, Optional, Tuple
 from urllib.parse import quote
 
 import requests
@@ -115,10 +115,11 @@ class EbayClient:
                 except (TypeError, ValueError):
                     shipping_cost = 0.0
 
-            # eBay's own leaf category name for this listing (e.g.
-            # "Wristwatches" vs "Watch Accessories") — used as a second
-            # safety check beyond the category_id search filter, in case
-            # eBay ever miscategorizes an item.
+            # NOTE: eBay's lightweight search results often don't reliably
+            # include category name data, so this field may end up empty.
+            # Don't rely on it alone — see get_item_details() below, which
+            # fetches the full item record for candidates that pass the
+            # price filter and is a much more reliable signal.
             ebay_category = None
             categories = item.get("categories", [])
             if categories:
@@ -141,34 +142,66 @@ class EbayClient:
             )
         return listings
 
-    def get_item_brand(self, item_id: str) -> str:
-        """
-        Fetch a single item's details and return its declared brand
-        (e.g. "Seiko", "Citizen"), or "" if not available. Used to verify
-        a listing's actual brand matches what its title claims — some
-        sellers reuse listing templates or mislabel items, so title text
-        alone isn't reliable enough to trust for a "deal" decision.
-        """
+    def _fetch_item_detail(self, item_id: str) -> dict:
+        """Fetch the full item record (not the lightweight search version)."""
         token = self._get_token()
         encoded_id = quote(item_id, safe="")
         url = f"{self.search_url.rsplit('/item_summary', 1)[0]}/item/{encoded_id}"
 
+        resp = requests.get(
+            url,
+            headers={
+                "Authorization": f"Bearer {token}",
+                "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
+            },
+            timeout=15,
+        )
+        resp.raise_for_status()
+        return resp.json()
+
+    def get_item_details(self, item_id: str) -> Tuple[str, str, str]:
+        """
+        Fetch a single item's full details and return (brand, item_type,
+        category_path) — all strings, empty ("") if not available.
+
+        - brand: e.g. "Seiko", "Citizen" — used to verify title claims.
+        - item_type: eBay's "Type" item specific, e.g. "Wristwatch" vs
+          "Band"/"Bracelet"/"Strap" — the most reliable signal for
+          whether a listing is the complete item or just an accessory.
+        - category_path: full category breadcrumb, e.g. "Jewelry &
+          Watches > Watches, Parts & Accessories > Watches >
+          Wristwatches" — a second cross-check on the same question.
+
+        This is only called for listings that already passed the price
+        filter, to keep the extra API call cheap.
+        """
         try:
-            resp = requests.get(
-                url,
-                headers={
-                    "Authorization": f"Bearer {token}",
-                    "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
-                },
-                timeout=15,
-            )
-            resp.raise_for_status()
-            data = resp.json()
+            data = self._fetch_item_detail(item_id)
         except Exception:
-            return ""
+            return "", "", ""
 
+        brand = ""
+        item_type = ""
         for aspect in data.get("localizedAspects", []):
-            if aspect.get("name", "").lower() == "brand":
-                return aspect.get("value", "")
+            name = aspect.get("name", "").lower()
+            if name == "brand":
+                brand = aspect.get("value", "")
+            elif name == "type":
+                item_type = aspect.get("value", "")
+        if not brand:
+            brand = data.get("brand", "")
 
-        return data.get("brand", "")
+        category_path = ""
+        categories = data.get("categoryPath") or data.get("categories")
+        if isinstance(categories, str):
+            category_path = categories
+        elif isinstance(categories, list) and categories:
+            names = [c.get("categoryName", "") for c in categories if c.get("categoryName")]
+            category_path = " > ".join(names)
+
+        return brand, item_type, category_path
+
+    def get_item_brand(self, item_id: str) -> str:
+        """Backwards-compatible wrapper — returns just the brand."""
+        brand, _, _ = self.get_item_details(item_id)
+        return brand
