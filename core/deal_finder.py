@@ -68,25 +68,29 @@ JUNK_CONDITIONS = [
     "not working",
 ]
 
-# eBay's own leaf category names (not just the category_id search filter)
-# that mean this is an accessory/part, not the complete item. Checked as
-# a second safety layer in case eBay ever miscategorizes something.
-JUNK_CATEGORIES = [
-    "accessor",
+# Words that mean "this is an accessory/part, not the complete item" when
+# found in eBay's own "Type" item specific or category path — this is the
+# reliable, verified check (fetched from the full item record, same call
+# used for brand verification), not just a title-text guess.
+JUNK_ITEM_TYPES = [
     "band",
-    "strap",
     "bracelet",
-    "parts",
-    "case",  # watch cases sold standalone, not the "case only" phrase above
+    "strap",
+    "accessor",
+    "part",
+    "case",
+    "buckle",
+    "clasp",
 ]
 
 # Skip listings from sellers with very low feedback — higher risk of scams
 # or misrepresented condition. Set to 0 to disable this filter.
 MIN_SELLER_FEEDBACK = 5
 
-# Estimated cost of reselling on eBay: final value fee (~13%) plus
-# payment processing (~3%). Applied to the resale price when estimating
-# real profit — a "deal" on paper can still be a loss after these.
+# Estimated cost of reselling on eBay: final value fee (~15% for Jewelry
+# & Watches) plus the flat per-order fee, applied to the resale price
+# when estimating real profit — a "deal" on paper can still be a loss
+# after these.
 RESALE_FEE_PCT = 0.15
 
 # Sales tax on the PURCHASE, applied to (price + shipping) before it
@@ -94,6 +98,11 @@ RESALE_FEE_PCT = 0.15
 # FL (Tampa area) — 6% state + 1.5% county = 7.5% combined. Update this
 # if the delivery address ever changes.
 SALES_TAX_PCT = 0.075
+
+# Estimated cost to ship the item back out when reselling (box, packing
+# materials, USPS label with tracking + insurance) — a real expense on
+# top of eBay's resale fee percentage, not covered by it.
+OUTBOUND_SHIPPING_COST = 9.50
 
 
 def is_junk_listing(listing: Listing) -> bool:
@@ -104,10 +113,6 @@ def is_junk_listing(listing: Listing) -> bool:
         condition_lower = listing.condition.lower()
         if any(phrase in condition_lower for phrase in JUNK_CONDITIONS):
             return True
-    if listing.ebay_category:
-        category_lower = listing.ebay_category.lower()
-        if any(phrase in category_lower for phrase in JUNK_CATEGORIES):
-            return True
     if (
         MIN_SELLER_FEEDBACK > 0
         and listing.seller_feedback_score is not None
@@ -115,6 +120,29 @@ def is_junk_listing(listing: Listing) -> bool:
     ):
         return True
     return False
+
+
+def verify_complete_item(client: EbayClient, listing: Listing) -> bool:
+    """
+    Confirm this is genuinely the complete item (a wristwatch), not an
+    accessory/part, using eBay's "Type" item specific and category path
+    from the full item record — a much more reliable signal than title
+    text, which is how a bracelet-only listing slipped through before
+    (its title read like a complete watch).
+
+    Only called for listings that already passed the price filter, to
+    keep the extra API call cheap.
+    """
+    _, item_type, category_path = client.get_item_details(listing.item_id)
+
+    combined = f"{item_type} {category_path}".lower()
+    if not combined.strip():
+        return True  # no data to check against — don't block on missing data
+
+    if any(junk_word in combined for junk_word in JUNK_ITEM_TYPES):
+        return False
+
+    return True
 
 
 def verify_brand(client: EbayClient, category_module, listing: Listing) -> bool:
@@ -156,15 +184,13 @@ def score_listing(listing: Listing, category_module, category_name: str) -> "Dea
     if landed_cost <= 0 or low <= 0:
         return None
 
-    # Discount is measured against landed cost (price + shipping + tax),
-    # not just the listing price.
     discount_pct = (low - landed_cost) / low * 100
 
-    net_profit_low = (low * (1 - RESALE_FEE_PCT)) - landed_cost
-    net_profit_high = (high * (1 - RESALE_FEE_PCT)) - landed_cost
+    # Net profit accounts for landed cost, eBay's resale fee percentage,
+    # AND the real cost of shipping the item back out when it resells.
+    net_profit_low = (low * (1 - RESALE_FEE_PCT)) - landed_cost - OUTBOUND_SHIPPING_COST
+    net_profit_high = (high * (1 - RESALE_FEE_PCT)) - landed_cost - OUTBOUND_SHIPPING_COST
 
-    # Require both: a big enough discount AND actual positive profit
-    # after resale fees.
     if discount_pct >= category_module.MIN_DISCOUNT_PCT and net_profit_low > 0:
         return Deal(
             listing=listing,
@@ -205,6 +231,10 @@ def run() -> List[Deal]:
 
                 deal = score_listing(listing, module, category_name)
                 if deal:
+                    if not verify_complete_item(client, listing):
+                        print(f"    Skipped (not a complete watch — accessory/part): {listing.title}")
+                        seen_ids.add(listing.item_id)
+                        continue
                     if not verify_brand(client, module, listing):
                         print(f"    Skipped (brand mismatch): {listing.title}")
                         seen_ids.add(listing.item_id)  # don't re-check it every day
@@ -261,7 +291,7 @@ def build_email_html(deals: List[Deal]) -> str:
         <tr>
           <td style="padding-top:8px;font-size:12px;color:#9ca3af;">
             Automated scan of live eBay listings against estimated market value,
-            after shipping cost, sales tax, and an estimated 15% resale fee.
+            after shipping cost, sales tax, outbound shipping, and eBay's resale fee.
             Always double-check condition and seller details before buying.
           </td>
         </tr>
