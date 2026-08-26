@@ -2113,5 +2113,43 @@
     "seller_username": "cheap-n-nerdy",
     "seller_feedback_score": 2306,
     "date_found": "2026-08-26T07:50:25.951122+00:00"
+  },
+  {
+    "id": "v1|307147989487|0",
+    "category": "cameras",
+    "title": "Canon AE-1 Program 35mm SLR Film Camera + 75-200mm 1:4.5 Canon Zoom Lens & More!",
+    "condition": "Used",
+    "price": 70.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 75.25,
+    "estimated_value_low": 120,
+    "estimated_value_high": 220,
+    "net_profit_low": 17.25,
+    "net_profit_high": 102.25,
+    "discount_pct": 37.291666666666664,
+    "url": "https://www.ebay.com/itm/307147989487?_skw=Canon+AE-1+35mm&hash=item47837261ef:g:lEAAAeSwa1Bqi8fi",
+    "image_url": "https://i.ebayimg.com/images/g/lEAAAeSwa1Bqi8fi/s-l225.jpg",
+    "seller_username": "the-comic-seller",
+    "seller_feedback_score": 1175,
+    "date_found": "2026-08-26T18:54:38.572243+00:00"
+  },
+  {
+    "id": "v1|198456619011|0",
+    "category": "cameras",
+    "title": "Olympus OM-1 35mm Classic SLR Film Camera - Silver Not Tested Needs Cleaning",
+    "condition": "Used",
+    "price": 45.0,
+    "shipping_cost": 10.0,
+    "landed_cost": 59.125,
+    "estimated_value_low": 120,
+    "estimated_value_high": 250,
+    "net_profit_low": 33.375,
+    "net_profit_high": 143.875,
+    "discount_pct": 50.72916666666667,
+    "url": "https://www.ebay.com/itm/198456619011?_skw=Olympus+OM-1&hash=item2e34efb003:g:Ff0AAeSw65pqGyBk",
+    "image_url": "https://i.ebayimg.com/images/g/Ff0AAeSw65pqGyBk/s-l225.jpg",
+    "seller_username": "artlbc",
+    "seller_feedback_score": 1817,
+    "date_found": "2026-08-26T18:54:38.572243+00:00"
   }
 ]
