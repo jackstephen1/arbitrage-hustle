@@ -30,7 +30,20 @@ Beginner-friendly $200-$700 lineup (researched August 2026):
 - Citizen Tsuyosa — very popular "Datejust homage," strong demand/
   liquidity, though used resale runs a bit below the $300 floor
 - Seiko 5 Sports GMT (SSK series) — affordable true-GMT automatic,
-  strong demand, retails $350-450 new
+  strong demand, retails $350-450 new. WATCH FOR MODS: some sellers
+  list "Seiko mod" watches with GMT-style dials on a plain 7S26
+  movement (no real GMT function) — these are NOT genuine SSK
+  references despite similar branding/appearance. Always verify the
+  reference number matches a real SSK model and the movement is 4R34,
+  not 7S26, before trusting the price band below.
+- Seiko Presage Cocktail Time "Mojito" (SRPE45) — genuinely appreciating
+  per WatchCharts (+18.3% over the past year), official Seiko retail is
+  $450. NOTE: the Presage "Cocktail Time" line varies wildly by
+  reference — the Mojito is a strong pick, but e.g. the "Espresso
+  Martini" (SRPE17) is flagged "Extreme Risk" by WatchCharts and has
+  been depreciating. Do NOT add other Presage references to this list
+  without researching that specific reference's own price trend first —
+  "Presage" as a brand/line is not a reliable single price band.
 """
 
 from typing import List, Optional, Tuple
@@ -58,12 +71,13 @@ SEARCH_TERMS: List[str] = [
     "Bulova Jet Star",
     "Citizen Tsuyosa",
     "Seiko 5 Sports GMT",
+    "Seiko Presage Mojito",
 ]
 
 # eBay category ID for Wristwatches
 CATEGORY_ID: Optional[str] = "31387"
 
-MIN_DISCOUNT_PCT = 20.0  # raised from 20% now that watches target pricier $300-700 tier
+MIN_DISCOUNT_PCT = 20.0  # lowered back from 25% to surface more candidates while volume is low
 
 # Manual price bands (USD), keyed by a lowercase keyword that should
 # appear in the listing title. First match wins, so put more specific
@@ -95,6 +109,8 @@ PRICE_BANDS = {
     "tsuyosa": (220, 320),
     "5 sports gmt": (280, 420),
     "sports gmt": (280, 420),
+    "mojito": (380, 480),
+    "srpe45": (380, 480),
 }
 
 # Expected brand for each keyword — used to verify a listing's actual
@@ -126,6 +142,8 @@ BRAND_BY_KEYWORD = {
     "tsuyosa": "Citizen",
     "5 sports gmt": "Seiko",
     "sports gmt": "Seiko",
+    "mojito": "Seiko",
+    "srpe45": "Seiko",
 }
 
 
