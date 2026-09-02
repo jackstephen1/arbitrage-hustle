@@ -2284,5 +2284,24 @@
     "seller_username": "fruitscamera",
     "seller_feedback_score": 123,
     "date_found": "2026-09-01T22:54:38.344754+00:00"
+  },
+  {
+    "id": "v1|377465273270|0",
+    "category": "cameras",
+    "title": "Olympus OM-1N 35mm Camera Body, Chrome (without Shoe) (Japan)",
+    "condition": "Used",
+    "price": 59.99,
+    "shipping_cost": 0.0,
+    "landed_cost": 64.48925,
+    "estimated_value_low": 120,
+    "estimated_value_high": 250,
+    "net_profit_low": 28.01075,
+    "net_profit_high": 138.51075,
+    "discount_pct": 46.25895833333333,
+    "url": "https://www.ebay.com/itm/377465273270?_skw=Olympus+OM-1&hash=item57e2aefbb6:g:ldoAAeSwnsNqmCuc",
+    "image_url": "https://i.ebayimg.com/images/g/ldoAAeSwnsNqmCuc/s-l225.jpg",
+    "seller_username": "thecameraoutlet",
+    "seller_feedback_score": 139219,
+    "date_found": "2026-09-02T22:54:44.089026+00:00"
   }
 ]
