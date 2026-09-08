@@ -2778,5 +2778,43 @@
     "seller_username": "155_indigo",
     "seller_feedback_score": 228,
     "date_found": "2026-09-08T12:02:48.231607+00:00"
+  },
+  {
+    "id": "v1|278355575569|0",
+    "category": "watches",
+    "title": "SEIKO Prospex Alpinist BK SBEB001",
+    "condition": "Pre-owned - Good",
+    "price": 119.32,
+    "shipping_cost": 0.0,
+    "landed_cost": 128.26899999999998,
+    "estimated_value_low": 400,
+    "estimated_value_high": 700,
+    "net_profit_low": 202.23100000000002,
+    "net_profit_high": 457.231,
+    "discount_pct": 67.93275,
+    "url": "https://www.ebay.com/itm/278355575569?_skw=Seiko+Alpinist&hash=item40cf490311:g:IQEAAeSwrzBqoAJH",
+    "image_url": "https://i.ebayimg.com/images/g/IQEAAeSwrzBqoAJH/s-l225.jpg",
+    "seller_username": "sunifu5678",
+    "seller_feedback_score": 127,
+    "date_found": "2026-09-08T17:08:42.281944+00:00"
+  },
+  {
+    "id": "v1|278355575582|0",
+    "category": "watches",
+    "title": "H2 SEIKO LORD MATIC LM 23 Jewels Automatic Watch",
+    "condition": "Pre-owned - Good",
+    "price": 148.05,
+    "shipping_cost": 0.0,
+    "landed_cost": 159.15375,
+    "estimated_value_low": 200,
+    "estimated_value_high": 450,
+    "net_profit_low": 1.3462499999999977,
+    "net_profit_high": 213.84625,
+    "discount_pct": 20.423125,
+    "url": "https://www.ebay.com/itm/278355575582?_skw=Seiko+Lord+Matic&hash=item40cf49031e:g:FTIAAeSw9aVqoAGP",
+    "image_url": "https://i.ebayimg.com/images/g/FTIAAeSw9aVqoAGP/s-l225.jpg",
+    "seller_username": "sunifu5678",
+    "seller_feedback_score": 127,
+    "date_found": "2026-09-08T17:08:42.281944+00:00"
   }
 ]
