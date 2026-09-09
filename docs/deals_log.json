@@ -2987,5 +2987,43 @@
     "seller_username": "thecameraoutlet",
     "seller_feedback_score": 139380,
     "date_found": "2026-09-09T17:05:01.484484+00:00"
+  },
+  {
+    "id": "v1|188909816930|0",
+    "category": "watches",
+    "title": "Vintage Longines Conquest L1.631.4 Silver Dial Quartz Men's Watch w/ Box",
+    "condition": "Pre-owned - Good",
+    "price": 250.0,
+    "shipping_cost": 5.99,
+    "landed_cost": 275.18925,
+    "estimated_value_low": 450,
+    "estimated_value_high": 700,
+    "net_profit_low": 97.81074999999998,
+    "net_profit_high": 310.31075,
+    "discount_pct": 38.84683333333333,
+    "url": "https://www.ebay.com/itm/188909816930?_skw=Longines+Conquest&hash=item2bfbe70c62:g:UFoAAeSwdWRqocS4",
+    "image_url": "https://i.ebayimg.com/images/g/UFoAAeSwdWRqocS4/s-l225.jpg",
+    "seller_username": "georgia.resell",
+    "seller_feedback_score": 2943,
+    "date_found": "2026-09-09T22:50:50.423630+00:00"
+  },
+  {
+    "id": "v1|147436485357|0",
+    "category": "cameras",
+    "title": "Olympus OM-1 MD SLR Film Camera Body Chrome OM1 *Read #950",
+    "condition": "Used",
+    "price": 58.49,
+    "shipping_cost": 0.0,
+    "landed_cost": 62.87675,
+    "estimated_value_low": 120,
+    "estimated_value_high": 250,
+    "net_profit_low": 29.62325,
+    "net_profit_high": 140.12324999999998,
+    "discount_pct": 47.60270833333333,
+    "url": "https://www.ebay.com/itm/147436485357?_skw=Olympus+OM-1&hash=item2253e63aed:g:zyYAAeSwxMpqVpGY",
+    "image_url": "https://i.ebayimg.com/images/g/zyYAAeSwxMpqVpGY/s-l225.jpg",
+    "seller_username": "robertscamera",
+    "seller_feedback_score": 301856,
+    "date_found": "2026-09-09T22:50:50.423630+00:00"
   }
 ]
