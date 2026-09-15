@@ -3443,5 +3443,43 @@
     "seller_username": "mod-objex",
     "seller_feedback_score": 2193,
     "date_found": "2026-09-14T23:36:00.654978+00:00"
+  },
+  {
+    "id": "v1|820129020686|0",
+    "category": "watches",
+    "title": "[NEAR MINT] LONGINES Conquest  156 3277 Silver Dial 32mm Date Quartz Men's Watch",
+    "condition": "Pre-owned - Good",
+    "price": 239.99,
+    "shipping_cost": 49.99,
+    "landed_cost": 311.7285,
+    "estimated_value_low": 450,
+    "estimated_value_high": 700,
+    "net_profit_low": 61.2715,
+    "net_profit_high": 273.7715,
+    "discount_pct": 30.727,
+    "url": "https://www.ebay.com/itm/820129020686?_skw=Longines+Conquest&hash=itembef37fbb0e:g:Z3gAAeSwO-hpujd4&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbfxcn%2B8bLGTtWfG%2BE%2Fn4T8daYvwakRGvT9ShMh1VA%2FLgbtmYBasvHk7TnIUbHdZFeTmhsCrpX%2FtzZxNSQcAk81rq%2BUazb7hSRKikaTO23KuVHqGKsbFwdRzF7%2FiV4ktKj5grsWHhpt9DKRhSaeBg90kAdZATIFlTbQcuPzDPK4Q5VBzYUpQAXWWVijFZnSUG8dF%2BUbtqDQmXVlt5F3bQqEp9e6EYaFUHgxrfkO8n9salcO6E49zDJOOR8wzwU7HjRHf1cnpcBbspGFISTw9vHjmCjCevpBwZ%2F0AuHwfF9g0A%3D%3D",
+    "image_url": "https://i.ebayimg.com/images/g/Z3gAAeSwO-hpujd4/s-l225.jpg",
+    "seller_username": "kuro_watch_japan",
+    "seller_feedback_score": 383,
+    "date_found": "2026-09-15T12:32:15.197744+00:00"
+  },
+  {
+    "id": "v1|366669446268|0",
+    "category": "cameras",
+    "title": "Pentax K1000 50mm f/2 SLR Film Camera UNTESTED",
+    "condition": "Used",
+    "price": 50.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 53.75,
+    "estimated_value_low": 80,
+    "estimated_value_high": 160,
+    "net_profit_low": 4.75,
+    "net_profit_high": 72.75,
+    "discount_pct": 32.8125,
+    "url": "https://www.ebay.com/itm/366669446268?_skw=Pentax+K1000&hash=item555f33bc7c:g:rjsAAeSw~CZqqJfa",
+    "image_url": "https://i.ebayimg.com/images/g/rjsAAeSw~CZqqJfa/s-l225.jpg",
+    "seller_username": "mittenreselling",
+    "seller_feedback_score": 46,
+    "date_found": "2026-09-15T12:32:15.197744+00:00"
   }
 ]
