@@ -3557,5 +3557,43 @@
     "seller_username": "lvsells7",
     "seller_feedback_score": 1981,
     "date_found": "2026-09-15T17:33:48.995787+00:00"
+  },
+  {
+    "id": "v1|267786313646|0",
+    "category": "watches",
+    "title": "Tissot Unisex PRX Digital Quartz Black Dial Watch - T1372631105000 NEW",
+    "condition": "New with box and papers",
+    "price": 135.0,
+    "shipping_cost": 8.0,
+    "landed_cost": 153.725,
+    "estimated_value_low": 200,
+    "estimated_value_high": 400,
+    "net_profit_low": 6.775000000000006,
+    "net_profit_high": 176.775,
+    "discount_pct": 23.137500000000003,
+    "url": "https://www.ebay.com/itm/267786313646?_skw=Tissot+PRX+quartz&hash=item3e594edfae:g:5xQAAeSwfohqqYvy",
+    "image_url": "https://i.ebayimg.com/images/g/5xQAAeSwfohqqYvy/s-l225.jpg",
+    "seller_username": "raderelect",
+    "seller_feedback_score": 1757,
+    "date_found": "2026-09-15T19:57:07.572800+00:00"
+  },
+  {
+    "id": "v1|257744733960|0",
+    "category": "cameras",
+    "title": "Canon AE-1 Program 35mm Camera Body very clean",
+    "condition": "Used",
+    "price": 39.99,
+    "shipping_cost": 0.0,
+    "landed_cost": 42.98925,
+    "estimated_value_low": 120,
+    "estimated_value_high": 220,
+    "net_profit_low": 49.51075,
+    "net_profit_high": 134.51075,
+    "discount_pct": 64.175625,
+    "url": "https://www.ebay.com/itm/257744733960?_skw=Canon+AE-1+35mm&hash=item3c02c88708:g:wusAAeSwQ59qqYgJ",
+    "image_url": "https://i.ebayimg.com/images/g/wusAAeSwQ59qqYgJ/s-l225.jpg",
+    "seller_username": "middlemanresale",
+    "seller_feedback_score": 1193,
+    "date_found": "2026-09-15T19:57:07.572800+00:00"
   }
 ]
