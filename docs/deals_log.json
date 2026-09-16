@@ -3595,5 +3595,43 @@
     "seller_username": "middlemanresale",
     "seller_feedback_score": 1193,
     "date_found": "2026-09-15T19:57:07.572800+00:00"
+  },
+  {
+    "id": "v1|117413923667|417277945452",
+    "category": "watches",
+    "title": "Orient Watch Bambino Classic Men Luxury Gift Automatic Mechanical Leather Strap",
+    "condition": "New with box and papers",
+    "price": 78.9,
+    "shipping_cost": 0.0,
+    "landed_cost": 84.81750000000001,
+    "estimated_value_low": 120,
+    "estimated_value_high": 220,
+    "net_profit_low": 7.68249999999999,
+    "net_profit_high": 92.68249999999999,
+    "discount_pct": 29.318749999999994,
+    "url": "https://www.ebay.com/itm/117413923667?_skw=Orient+Bambino&hash=item1b566a4b53:g:qnsAAeSwJMFqqW1e",
+    "image_url": "https://i.ebayimg.com/images/g/qnsAAeSwJMFqqW1e/s-l225.jpg",
+    "seller_username": "moneysaverny",
+    "seller_feedback_score": 873,
+    "date_found": "2026-09-16T12:29:48.439925+00:00"
+  },
+  {
+    "id": "v1|287588881594|589485628250",
+    "category": "cameras",
+    "title": "[REFURBISHED] Canon AE-1 Program Black from Japan w/ Warranty [US Seller]",
+    "condition": "Used",
+    "price": 50.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 53.75,
+    "estimated_value_low": 120,
+    "estimated_value_high": 220,
+    "net_profit_low": 38.75,
+    "net_profit_high": 123.75,
+    "discount_pct": 55.208333333333336,
+    "url": "https://www.ebay.com/itm/287588881594?_skw=Canon+AE-1+35mm&hash=item42f5a214ba:g:4YwAAeSwAwdqqbN6",
+    "image_url": "https://i.ebayimg.com/images/g/4YwAAeSwAwdqqbN6/s-l225.jpg",
+    "seller_username": "theplanets",
+    "seller_feedback_score": 219,
+    "date_found": "2026-09-16T12:29:48.439925+00:00"
   }
 ]
