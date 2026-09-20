@@ -4203,5 +4203,43 @@
     "seller_username": "coco0313",
     "seller_feedback_score": 9,
     "date_found": "2026-09-20T19:13:56.985780+00:00"
+  },
+  {
+    "id": "v1|128089701549|0",
+    "category": "watches",
+    "title": "Tissot PRX Quartz 40mm Blue Dial Date Swiss Made Stainless Steel Bracelet",
+    "condition": "Pre-owned - Good",
+    "price": 145.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 155.875,
+    "estimated_value_low": 200,
+    "estimated_value_high": 400,
+    "net_profit_low": 4.625,
+    "net_profit_high": 174.625,
+    "discount_pct": 22.0625,
+    "url": "https://www.ebay.com/itm/128089701549?_skw=Tissot+PRX+quartz&hash=item1dd2bdbcad:g:HOAAAeSwwelqsBj1",
+    "image_url": "https://i.ebayimg.com/images/g/HOAAAeSwwelqsBj1/s-l225.jpg",
+    "seller_username": "firstresortaz",
+    "seller_feedback_score": 38,
+    "date_found": "2026-09-20T22:47:49.593711+00:00"
+  },
+  {
+    "id": "v1|158314683240|0",
+    "category": "watches",
+    "title": "Seiko 5 Sports 42.5mm Men's 24-Jewel Water-Resistant Automatic Watch SRPD93",
+    "condition": "New with imperfections",
+    "price": 175.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 188.125,
+    "estimated_value_low": 250,
+    "estimated_value_high": 350,
+    "net_profit_low": 14.875,
+    "net_profit_high": 99.875,
+    "discount_pct": 24.75,
+    "url": "https://www.ebay.com/itm/158314683240?_skw=Seiko+5+Sports+SRPD&hash=item24dc4a5b68:g:RNUAAOSwuJ9jbEZv",
+    "image_url": "https://i.ebayimg.com/images/g/RNUAAOSwuJ9jbEZv/s-l225.jpg",
+    "seller_username": "topbrandwatches",
+    "seller_feedback_score": 7725,
+    "date_found": "2026-09-20T22:47:49.593711+00:00"
   }
 ]
