@@ -4241,5 +4241,43 @@
     "seller_username": "topbrandwatches",
     "seller_feedback_score": 7725,
     "date_found": "2026-09-20T22:47:49.593711+00:00"
+  },
+  {
+    "id": "v1|336804506136|0",
+    "category": "watches",
+    "title": "TISSOT PRX DIGITAL WATCH SWISS MADE 40MM",
+    "condition": "Pre-owned - Good",
+    "price": 125.0,
+    "shipping_cost": 10.0,
+    "landed_cost": 145.125,
+    "estimated_value_low": 200,
+    "estimated_value_high": 400,
+    "net_profit_low": 15.375,
+    "net_profit_high": 185.375,
+    "discount_pct": 27.437499999999996,
+    "url": "https://www.ebay.com/itm/336804506136?_skw=Tissot+PRX+quartz&hash=item4e6b1cea18:g:ZogAAeSwPOlqsIsn",
+    "image_url": "https://i.ebayimg.com/images/g/ZogAAeSwPOlqsIsn/s-l225.jpg",
+    "seller_username": "yat-yas1",
+    "seller_feedback_score": 620,
+    "date_found": "2026-09-21T13:46:10.113096+00:00"
+  },
+  {
+    "id": "v1|168703876838|0",
+    "category": "cameras",
+    "title": "Canon AE-1 35mm SLR Film Camera Body Silver Black Vintage FD Mount",
+    "condition": "Used",
+    "price": 59.99,
+    "shipping_cost": 0.0,
+    "landed_cost": 64.48925,
+    "estimated_value_low": 100,
+    "estimated_value_high": 180,
+    "net_profit_low": 11.010750000000002,
+    "net_profit_high": 79.01075,
+    "discount_pct": 35.51075,
+    "url": "https://www.ebay.com/itm/168703876838?_skw=Canon+AE-1+35mm&hash=item274788dee6:g:9REAAeSwBa1qsKXQ",
+    "image_url": "https://i.ebayimg.com/images/g/9REAAeSwBa1qsKXQ/s-l225.jpg",
+    "seller_username": "carolina-finds",
+    "seller_feedback_score": 7230,
+    "date_found": "2026-09-21T13:46:10.113096+00:00"
   }
 ]
