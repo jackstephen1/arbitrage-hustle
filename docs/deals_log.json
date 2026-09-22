@@ -4469,5 +4469,43 @@
     "seller_username": "okostephan",
     "seller_feedback_score": 5065,
     "date_found": "2026-09-22T17:34:19.949306+00:00"
+  },
+  {
+    "id": "v1|800700933892|0",
+    "category": "watches",
+    "title": "Seiko 5 Sports 42.5mm Men's 24-Jewel Water-Resistant Automatic Watch SRPD93",
+    "condition": "New with imperfections",
+    "price": 175.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 188.125,
+    "estimated_value_low": 250,
+    "estimated_value_high": 350,
+    "net_profit_low": 14.875,
+    "net_profit_high": 99.875,
+    "discount_pct": 24.75,
+    "url": "https://www.ebay.com/itm/800700933892?_skw=Seiko+5+Sports+SRPD&hash=itemba6d7ea704:g:RNUAAOSwuJ9jbEZv",
+    "image_url": "https://i.ebayimg.com/images/g/RNUAAOSwuJ9jbEZv/s-l225.jpg",
+    "seller_username": "topbrandwatches",
+    "seller_feedback_score": 7729,
+    "date_found": "2026-09-22T20:00:25.901073+00:00"
+  },
+  {
+    "id": "v1|188222547473|695812099779",
+    "category": "watches",
+    "title": "Heimdallr Sharkey Fume Dial 6309 Turtle SPR777 NH36A 200M Diver Automatic Watch",
+    "condition": "New with box and papers",
+    "price": 169.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 181.67499999999998,
+    "estimated_value_low": 250,
+    "estimated_value_high": 500,
+    "net_profit_low": 21.325000000000017,
+    "net_profit_high": 233.82500000000002,
+    "discount_pct": 27.330000000000005,
+    "url": "https://www.ebay.com/itm/188222547473?_skw=Seiko+6309+Turtle&hash=item2bd2f02611:g:T8cAAOSwnD5kIFao",
+    "image_url": "https://i.ebayimg.com/images/g/T8cAAOSwnD5kIFao/s-l225.jpg",
+    "seller_username": "blackoctober_watches",
+    "seller_feedback_score": 9559,
+    "date_found": "2026-09-22T20:00:25.901073+00:00"
   }
 ]
