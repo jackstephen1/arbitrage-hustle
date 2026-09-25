@@ -4716,5 +4716,43 @@
     "seller_username": "fruitscamera",
     "seller_feedback_score": 139,
     "date_found": "2026-09-24T23:40:58.706519+00:00"
+  },
+  {
+    "id": "v1|336812219881|0",
+    "category": "watches",
+    "title": "Tissot PRX Swiss Made Quartz Digital Watch Black Dial Silver Steel Bracelet Box",
+    "condition": "Pre-owned - Excellent",
+    "price": 105.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 112.875,
+    "estimated_value_low": 200,
+    "estimated_value_high": 400,
+    "net_profit_low": 47.625,
+    "net_profit_high": 217.625,
+    "discount_pct": 43.5625,
+    "url": "https://www.ebay.com/itm/336812219881?_skw=Tissot+PRX+quartz&hash=item4e6b929de9:g:Lv0AAeSwvwJqtEqQ",
+    "image_url": "https://i.ebayimg.com/images/g/Lv0AAeSwvwJqtEqQ/s-l225.jpg",
+    "seller_username": "atown499",
+    "seller_feedback_score": 25,
+    "date_found": "2026-09-25T12:39:01.137083+00:00"
+  },
+  {
+    "id": "v1|206580850704|0",
+    "category": "watches",
+    "title": "SEIKO SKX007 SKX399 SKX173 7s26-0020 Series Original Bezel Part. 8601 469A. NOS",
+    "condition": "Nuovo con scatola e documenti",
+    "price": 151.35,
+    "shipping_cost": 44.38,
+    "landed_cost": 210.40974999999997,
+    "estimated_value_low": 280,
+    "estimated_value_high": 450,
+    "net_profit_low": 18.090250000000026,
+    "net_profit_high": 162.59025000000003,
+    "discount_pct": 24.853660714285724,
+    "url": "https://www.ebay.com/itm/206580850704?_skw=Seiko+SKX007&hash=item30192da010:g:Y3sAAeSwFmBqtiKK",
+    "image_url": "https://i.ebayimg.com/images/g/Y3sAAeSwFmBqtiKK/s-l225.jpg",
+    "seller_username": "esob86",
+    "seller_feedback_score": 586,
+    "date_found": "2026-09-25T12:39:01.137083+00:00"
   }
 ]
