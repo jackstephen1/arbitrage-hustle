@@ -4792,5 +4792,43 @@
     "seller_username": "wussweiler",
     "seller_feedback_score": 3467,
     "date_found": "2026-09-25T20:12:36.047139+00:00"
+  },
+  {
+    "id": "v1|377522179759|0",
+    "category": "watches",
+    "title": "Taikonaut Stainless Oyster Bracelet Seiko Alpinist",
+    "condition": "Pre-owned - Good",
+    "price": 185.47,
+    "shipping_cost": 39.89,
+    "landed_cost": 242.262,
+    "estimated_value_low": 400,
+    "estimated_value_high": 700,
+    "net_profit_low": 88.238,
+    "net_profit_high": 343.238,
+    "discount_pct": 39.4345,
+    "url": "https://www.ebay.com/itm/377522179759?_skw=Seiko+Alpinist&hash=item57e6134eaf:g:Fu8AAeSwbZtqtnkS",
+    "image_url": "https://i.ebayimg.com/images/g/Fu8AAeSwbZtqtnkS/s-l225.jpg",
+    "seller_username": "maruchan48",
+    "seller_feedback_score": 50,
+    "date_found": "2026-09-25T23:42:11.610028+00:00"
+  },
+  {
+    "id": "v1|188984599170|0",
+    "category": "cameras",
+    "title": "Canon AE-1 Program 35mm Film Camera Body Only AS-IS READ",
+    "condition": "Used",
+    "price": 49.99,
+    "shipping_cost": 10.0,
+    "landed_cost": 64.48925,
+    "estimated_value_low": 120,
+    "estimated_value_high": 220,
+    "net_profit_low": 28.01075,
+    "net_profit_high": 113.01075,
+    "discount_pct": 46.25895833333333,
+    "url": "https://www.ebay.com/itm/188984599170?_skw=Canon+AE-1+35mm&hash=item2c005c2282:g:A4EAAeSwsfJqtuiT",
+    "image_url": "https://i.ebayimg.com/images/g/A4EAAeSwsfJqtuiT/s-l225.jpg",
+    "seller_username": "fruitscamera",
+    "seller_feedback_score": 139,
+    "date_found": "2026-09-25T23:42:11.610028+00:00"
   }
 ]
