@@ -4868,5 +4868,43 @@
     "seller_username": "topbrandwatches",
     "seller_feedback_score": 7737,
     "date_found": "2026-09-26T19:31:08.260307+00:00"
+  },
+  {
+    "id": "v1|318922192848|0",
+    "category": "watches",
+    "title": "New battery! Longines Conquest L174.4 VHP Gray Dial Date 32mm Quartz Men's Watch",
+    "condition": "Pre-owned - Good",
+    "price": 269.9,
+    "shipping_cost": 60.0,
+    "landed_cost": 354.6425,
+    "estimated_value_low": 450,
+    "estimated_value_high": 700,
+    "net_profit_low": 18.357500000000016,
+    "net_profit_high": 230.85750000000002,
+    "discount_pct": 21.19055555555556,
+    "url": "https://www.ebay.com/itm/318922192848?_skw=Longines+Conquest&hash=item4a413e77d0:g:2eQAAeSw-RxqnzRg&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZCX0DDbual7pkTDmrExQo9MQ2M5%2FgTr%2F6cb7E1WnuWNK4wjRec0smVxkWNsJRbk1qZMu9VSh3VNIqzwh9nbGBSzLCz3dC568feJqpwsutungnRNO6ZDmX6N%2BO2m%2BNFeGXPChQkmyidYdAoXGmsVg5rUsPwAV5ZqBXxgv5MUiFe5L%2F2NQy37EbXFo1nRHueBNkOjUupr4wJudAYm8OkKknhs8%2FcjlLnP53r0SNdR9kzb3G3udpT9zQiMV7uM2dgGyKk%2BKaIIBV6mklqloxcG%2B4gUGlzI8Cg4w5vgxMr4KQ9vw%3D%3D",
+    "image_url": "https://i.ebayimg.com/images/g/2eQAAeSw-RxqnzRg/s-l225.jpg",
+    "seller_username": "leaf_camera.watch_japan",
+    "seller_feedback_score": 1146,
+    "date_found": "2026-09-26T23:14:57.370780+00:00"
+  },
+  {
+    "id": "v1|158344844308|0",
+    "category": "cameras",
+    "title": "Canon AE-1 35mm SLR Film Camera Body Silver Black Vintage FD Mount",
+    "condition": "Used",
+    "price": 59.99,
+    "shipping_cost": 0.0,
+    "landed_cost": 64.48925,
+    "estimated_value_low": 100,
+    "estimated_value_high": 180,
+    "net_profit_low": 11.010750000000002,
+    "net_profit_high": 79.01075,
+    "discount_pct": 35.51075,
+    "url": "https://www.ebay.com/itm/158344844308?_skw=Canon+AE-1+35mm&hash=item24de169414:g:9REAAeSwBa1qsKXQ",
+    "image_url": "https://i.ebayimg.com/images/g/9REAAeSwBa1qsKXQ/s-l225.jpg",
+    "seller_username": "carolina-finds",
+    "seller_feedback_score": 7250,
+    "date_found": "2026-09-26T23:14:57.370780+00:00"
   }
 ]
