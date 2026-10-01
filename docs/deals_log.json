@@ -5286,5 +5286,43 @@
     "seller_username": "vintagejunkmonkey",
     "seller_feedback_score": 2407,
     "date_found": "2026-10-01T18:44:44.649356+00:00"
+  },
+  {
+    "id": "v1|237100853314|0",
+    "category": "cameras",
+    "title": "Pentax K1000 35mm SLR Film Camera with Lens     SMC Pentax 1:2 50mm not tested",
+    "condition": "Used",
+    "price": 50.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 53.75,
+    "estimated_value_low": 80,
+    "estimated_value_high": 160,
+    "net_profit_low": 4.75,
+    "net_profit_high": 72.75,
+    "discount_pct": 32.8125,
+    "url": "https://www.ebay.com/itm/237100853314?_skw=Pentax+K1000&hash=item37344fe842:g:r8IAAeSwC7ZqvrOU",
+    "image_url": "https://i.ebayimg.com/images/g/r8IAAeSwC7ZqvrOU/s-l225.jpg",
+    "seller_username": "ibeenstylin",
+    "seller_feedback_score": 110,
+    "date_found": "2026-10-01T21:32:30.479241+00:00"
+  },
+  {
+    "id": "v1|398451683573|0",
+    "category": "cameras",
+    "title": "Minolta X-700 35mm SLR Film Camera Body Only",
+    "condition": "Used",
+    "price": 50.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 53.75,
+    "estimated_value_low": 100,
+    "estimated_value_high": 200,
+    "net_profit_low": 21.75,
+    "net_profit_high": 106.75,
+    "discount_pct": 46.25,
+    "url": "https://www.ebay.com/itm/398451683573?_skw=Minolta+X-700&hash=item5cc59230f5:g:ZU0AAeSwB9hqva6Q&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaEkIwwFta5sM3eJ42bzpydp1zLHRY%2BMi83cFMxFVIbN033PDQabXnSAgiVN0mTPzmDllYlhmaYEk2T3WLUl4D4spKP2uXAqiloX6nIJP9r2hySKeO6P4sGos5sJAATwSo26awmjyCD7J7ZH--MkampSFIbnhtuluWwnC17NN1WNI0CsuOyMSm6A4mSRETzDd%2BMwXP1d2bWoH9opdandeymp9l1kepvO8WGMFof6QvuHb%2B2y8nPj2IIp%2BPH26PpDIcni4ZGf7obHtC6GNEP0ZiFN%2Bpo6V4ts7mRVyIP5bL5oA%3D%3D",
+    "image_url": "https://i.ebayimg.com/images/g/ZU0AAeSwB9hqva6Q/s-l225.jpg",
+    "seller_username": "karlamarket",
+    "seller_feedback_score": 13,
+    "date_found": "2026-10-01T21:32:30.479241+00:00"
   }
 ]
