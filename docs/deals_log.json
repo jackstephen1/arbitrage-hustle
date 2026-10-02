@@ -5343,5 +5343,24 @@
     "seller_username": "jakesbuyitall",
     "seller_feedback_score": 1525,
     "date_found": "2026-10-02T00:20:57.953971+00:00"
+  },
+  {
+    "id": "v1|206513348686|0",
+    "category": "cameras",
+    "title": "Olympus OM-1 MD SLR Film Camera Body Chrome OM1 #020",
+    "condition": "Good - Refurbished",
+    "price": 79.13,
+    "shipping_cost": 0.0,
+    "landed_cost": 85.06474999999999,
+    "estimated_value_low": 120,
+    "estimated_value_high": 250,
+    "net_profit_low": 7.435250000000011,
+    "net_profit_high": 117.93525000000001,
+    "discount_pct": 29.11270833333334,
+    "url": "https://www.ebay.com/itm/206513348686?_skw=Olympus+OM-1&hash=item301527a04e:g:zMwAAeSw2o5qjLme",
+    "image_url": "https://i.ebayimg.com/images/g/zMwAAeSw2o5qjLme/s-l225.jpg",
+    "seller_username": "robertscamera",
+    "seller_feedback_score": 306074,
+    "date_found": "2026-10-02T13:41:15.469077+00:00"
   }
 ]
