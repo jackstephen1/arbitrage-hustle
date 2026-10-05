@@ -5533,5 +5533,43 @@
     "seller_username": "thecameraoutlet",
     "seller_feedback_score": 140413,
     "date_found": "2026-10-05T21:11:49.872600+00:00"
+  },
+  {
+    "id": "v1|128116972803|0",
+    "category": "watches",
+    "title": "SEIKO PROSPEX Alpinist S822 00A0 Solar",
+    "condition": "Pre-owned - Good",
+    "price": 192.98,
+    "shipping_cost": 60.0,
+    "landed_cost": 271.95349999999996,
+    "estimated_value_low": 400,
+    "estimated_value_high": 700,
+    "net_profit_low": 58.54650000000004,
+    "net_profit_high": 313.54650000000004,
+    "discount_pct": 32.01162500000001,
+    "url": "https://www.ebay.com/itm/128116972803?_skw=Seiko+Alpinist&hash=item1dd45ddd03:g:Jx4AAeSwtupqxBiV&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYwSKPKsJWwd30Xd5Rmm%2Fa4qtInAvHeNGA6mJJ719d8bgU%2FSU1R2TKJdWvn86QvKeyc2zLxOAHaQY8x0ePd7Qtp%2FFxMthTDx4NtjF1Azw5Nx94El%2BJ348DMeCO30XH0sKor30Q%2BkjM7qQoSSzuq%2FhMXXCCl1A61CaEhc7gKajJSKS8Hb%2B0cz%2BsfGtVyxo8GUbTNdmOJYW27Qik8h%2F5l1n0Om4qHsCfp3QDZr3dG783GjfgofLHorJJuCNRHeSBZFmvQyC6%2F7mO6BaghAScldH2OSnoFEb%2FW7pmoEcKns4YE7Q%3D%3D",
+    "image_url": "https://i.ebayimg.com/images/g/Jx4AAeSwtupqxBiV/s-l225.jpg",
+    "seller_username": "tokyo-horizon",
+    "seller_feedback_score": 961,
+    "date_found": "2026-10-05T23:02:16.282685+00:00"
+  },
+  {
+    "id": "v1|128116945957|0",
+    "category": "cameras",
+    "title": "Olympus OM-1 MD 35mm Camera Body, Chrome (with Shoe) [Made In Japan]",
+    "condition": "Used",
+    "price": 56.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 60.199999999999996,
+    "estimated_value_low": 120,
+    "estimated_value_high": 250,
+    "net_profit_low": 32.300000000000004,
+    "net_profit_high": 142.8,
+    "discount_pct": 49.833333333333336,
+    "url": "https://www.ebay.com/itm/128116945957?_skw=Olympus+OM-1&hash=item1dd45d7425:g:ve0AAeSwERVqxBRn",
+    "image_url": "https://i.ebayimg.com/images/g/ve0AAeSwERVqxBRn/s-l225.jpg",
+    "seller_username": "thecameraoutlet",
+    "seller_feedback_score": 140423,
+    "date_found": "2026-10-05T23:02:16.282685+00:00"
   }
 ]
