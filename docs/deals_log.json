@@ -5761,5 +5761,43 @@
     "seller_username": "ml702011",
     "seller_feedback_score": 1740,
     "date_found": "2026-10-07T19:15:44.347062+00:00"
+  },
+  {
+    "id": "v1|377553015022|0",
+    "category": "cameras",
+    "title": "Canon AE-1 35mm SLR Film Camera with FD 50mm 1:1.8 Lens Vintage Silver",
+    "condition": "Used",
+    "price": 60.0,
+    "shipping_cost": 6.85,
+    "landed_cost": 71.86375,
+    "estimated_value_low": 100,
+    "estimated_value_high": 180,
+    "net_profit_low": 3.636250000000004,
+    "net_profit_high": 71.63625,
+    "discount_pct": 28.13625,
+    "url": "https://www.ebay.com/itm/377553015022?_skw=Canon+AE-1+35mm&hash=item57e7e9d0ee:g:OS0AAeSw7fpqxrta",
+    "image_url": "https://i.ebayimg.com/images/g/OS0AAeSw7fpqxrta/s-l225.jpg",
+    "seller_username": "babscapsule",
+    "seller_feedback_score": 34,
+    "date_found": "2026-10-07T21:43:55.412919+00:00"
+  },
+  {
+    "id": "v1|128121587081|0",
+    "category": "cameras",
+    "title": "Olympus OM-1N 35mm Camera Body, Chrome (without Shoe) [Made In Japan]",
+    "condition": "Used",
+    "price": 45.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 48.375,
+    "estimated_value_low": 120,
+    "estimated_value_high": 250,
+    "net_profit_low": 44.125,
+    "net_profit_high": 154.625,
+    "discount_pct": 59.68750000000001,
+    "url": "https://www.ebay.com/itm/128121587081?_skw=Olympus+OM-1&hash=item1dd4a44589:g:fQcAAeSwSohqxrdN",
+    "image_url": "https://i.ebayimg.com/images/g/fQcAAeSwSohqxrdN/s-l225.jpg",
+    "seller_username": "thecameraoutlet",
+    "seller_feedback_score": 140514,
+    "date_found": "2026-10-07T21:43:55.412919+00:00"
   }
 ]
