@@ -6540,5 +6540,43 @@
     "seller_username": "fingerlakessales07",
     "seller_feedback_score": 5451,
     "date_found": "2026-10-13T14:53:26.410060+00:00"
+  },
+  {
+    "id": "v1|800791643553|0",
+    "category": "watches",
+    "title": "Seiko 5 Sports 42.5mm Men's 24-Jewel Water-Resistant Automatic Watch SRPD93",
+    "condition": "New with imperfections",
+    "price": 175.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 188.125,
+    "estimated_value_low": 250,
+    "estimated_value_high": 350,
+    "net_profit_low": 14.875,
+    "net_profit_high": 99.875,
+    "discount_pct": 24.75,
+    "url": "https://www.ebay.com/itm/800791643553?_skw=Seiko+5+Sports+SRPD&hash=itemba72e6c5a1:g:RNUAAOSwuJ9jbEZv",
+    "image_url": "https://i.ebayimg.com/images/g/RNUAAOSwuJ9jbEZv/s-l225.jpg",
+    "seller_username": "topbrandwatches",
+    "seller_feedback_score": 7783,
+    "date_found": "2026-10-13T19:47:42.979416+00:00"
+  },
+  {
+    "id": "v1|117465013492|0",
+    "category": "cameras",
+    "title": "CANON AE-1 35mm film camera body  Data Back A included Needs battery & Cover",
+    "condition": "Used",
+    "price": 59.99,
+    "shipping_cost": 0.0,
+    "landed_cost": 64.48925,
+    "estimated_value_low": 100,
+    "estimated_value_high": 180,
+    "net_profit_low": 11.010750000000002,
+    "net_profit_high": 79.01075,
+    "discount_pct": 35.51075,
+    "url": "https://www.ebay.com/itm/117465013492?_skw=Canon+AE-1+35mm&hash=item1b5975dcf4:g:h-sAAeSwYu9qzn41",
+    "image_url": "https://i.ebayimg.com/images/g/h-sAAeSwYu9qzn41/s-l225.jpg",
+    "seller_username": "ramiam",
+    "seller_feedback_score": 5251,
+    "date_found": "2026-10-13T19:47:42.979416+00:00"
   }
 ]
