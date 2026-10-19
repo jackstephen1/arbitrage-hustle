@@ -7015,5 +7015,43 @@
     "seller_username": "milano72",
     "seller_feedback_score": 633,
     "date_found": "2026-10-18T19:11:22.286506+00:00"
+  },
+  {
+    "id": "v1|940025462857|0",
+    "category": "watches",
+    "title": "SEIKO S822-00A0 Alpinist",
+    "condition": "Pre-owned - Good",
+    "price": 77.85,
+    "shipping_cost": 0.0,
+    "landed_cost": 83.68874999999998,
+    "estimated_value_low": 400,
+    "estimated_value_high": 700,
+    "net_profit_low": 246.81125000000003,
+    "net_profit_high": 501.81125000000003,
+    "discount_pct": 79.07781250000001,
+    "url": "https://www.ebay.com/itm/940025462857?_skw=Seiko+Alpinist&hash=itemdadde24049:g:hWoAAeSwLQJq1h0b",
+    "image_url": "https://i.ebayimg.com/images/g/hWoAAeSwLQJq1h0b/s-l225.jpg",
+    "seller_username": "sunifu5678",
+    "seller_feedback_score": 159,
+    "date_found": "2026-10-19T14:28:09.741239+00:00"
+  },
+  {
+    "id": "v1|820253718292|0",
+    "category": "cameras",
+    "title": "Vintage Minolta X-700 35MM camera w/ Lenses NOT TESTED",
+    "condition": "Used",
+    "price": 65.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 69.875,
+    "estimated_value_low": 100,
+    "estimated_value_high": 200,
+    "net_profit_low": 5.625,
+    "net_profit_high": 90.625,
+    "discount_pct": 30.125,
+    "url": "https://www.ebay.com/itm/820253718292?_skw=Minolta+X-700&hash=itembefaee7714:g:sh0AAeSwY5Zq1XqA",
+    "image_url": "https://i.ebayimg.com/images/g/sh0AAeSwY5Zq1XqA/s-l225.jpg",
+    "seller_username": "certifiedselect",
+    "seller_feedback_score": 83,
+    "date_found": "2026-10-19T14:28:09.741239+00:00"
   }
 ]
