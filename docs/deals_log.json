@@ -7072,5 +7072,43 @@
     "seller_username": "geumail",
     "seller_feedback_score": 32,
     "date_found": "2026-10-19T19:09:54.150419+00:00"
+  },
+  {
+    "id": "v1|237133536836|0",
+    "category": "watches",
+    "title": "SEIKO PROSPEX 1959 Alpinist Reissue Belt Parts",
+    "condition": "Pre-owned - Good",
+    "price": 208.58,
+    "shipping_cost": 30.0,
+    "landed_cost": 256.4735,
+    "estimated_value_low": 400,
+    "estimated_value_high": 700,
+    "net_profit_low": 74.0265,
+    "net_profit_high": 329.0265,
+    "discount_pct": 35.881625,
+    "url": "https://www.ebay.com/itm/237133536836?_skw=Seiko+Alpinist&hash=item3736429e44:g:TPIAAeSwm6Fq1w8z",
+    "image_url": "https://i.ebayimg.com/images/g/TPIAAeSwm6Fq1w8z/s-l225.jpg",
+    "seller_username": "watch_premium",
+    "seller_feedback_score": 10,
+    "date_found": "2026-10-20T12:36:36.070983+00:00"
+  },
+  {
+    "id": "v1|940026621458|0",
+    "category": "cameras",
+    "title": "Vintage Olympus OM-1 Film Camera w/Case and Filter TESTED!!! READ DESCRIPTION!!!",
+    "condition": "Used",
+    "price": 82.61,
+    "shipping_cost": 0.0,
+    "landed_cost": 88.80574999999999,
+    "estimated_value_low": 120,
+    "estimated_value_high": 250,
+    "net_profit_low": 3.694250000000011,
+    "net_profit_high": 114.19425000000001,
+    "discount_pct": 25.99520833333334,
+    "url": "https://www.ebay.com/itm/940026621458?_skw=Olympus+OM-1&hash=itemdaddf3ee12:g:K-IAAeSwVylqxBQ-",
+    "image_url": "https://i.ebayimg.com/images/g/K-IAAeSwVylqxBQ-/s-l225.jpg",
+    "seller_username": "goodwillomaha",
+    "seller_feedback_score": 14731,
+    "date_found": "2026-10-20T12:36:36.070983+00:00"
   }
 ]
