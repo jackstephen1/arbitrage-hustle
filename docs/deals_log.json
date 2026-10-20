@@ -7110,5 +7110,43 @@
     "seller_username": "goodwillomaha",
     "seller_feedback_score": 14731,
     "date_found": "2026-10-20T12:36:36.070983+00:00"
+  },
+  {
+    "id": "v1|960093066840|0",
+    "category": "watches",
+    "title": "Seiko 5 Sports 42.5mm Men's 24-Jewel Water-Resistant Automatic Watch SRPD93",
+    "condition": "New with imperfections",
+    "price": 175.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 188.125,
+    "estimated_value_low": 250,
+    "estimated_value_high": 350,
+    "net_profit_low": 14.875,
+    "net_profit_high": 99.875,
+    "discount_pct": 24.75,
+    "url": "https://www.ebay.com/itm/960093066840?_skw=Seiko+5+Sports+SRPD&hash=itemdf8a019658:g:RNUAAOSwuJ9jbEZv",
+    "image_url": "https://i.ebayimg.com/images/g/RNUAAOSwuJ9jbEZv/s-l225.jpg",
+    "seller_username": "topbrandwatches",
+    "seller_feedback_score": 7796,
+    "date_found": "2026-10-20T20:15:24.714389+00:00"
+  },
+  {
+    "id": "v1|147644483297|0",
+    "category": "cameras",
+    "title": "Minolta X-700 35mm SLR Camera w/ 45mm Lens *USED*",
+    "condition": "Used",
+    "price": 59.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 63.425,
+    "estimated_value_low": 100,
+    "estimated_value_high": 200,
+    "net_profit_low": 12.075000000000003,
+    "net_profit_high": 97.075,
+    "discount_pct": 36.575,
+    "url": "https://www.ebay.com/itm/147644483297?_skw=Minolta+X-700&hash=item22604c06e1:g:JlsAAeSwiHJq1x8R",
+    "image_url": "https://i.ebayimg.com/images/g/JlsAAeSwiHJq1x8R/s-l225.jpg",
+    "seller_username": "pixel.connection",
+    "seller_feedback_score": 12923,
+    "date_found": "2026-10-20T20:15:24.714389+00:00"
   }
 ]
