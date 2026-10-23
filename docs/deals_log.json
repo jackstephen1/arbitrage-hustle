@@ -7376,5 +7376,43 @@
     "seller_username": "emberport",
     "seller_feedback_score": 64,
     "date_found": "2026-10-23T20:10:50.082319+00:00"
+  },
+  {
+    "id": "v1|257814220594|0",
+    "category": "watches",
+    "title": "Vintage SEIKO 4006 Bell-Matic 27J Automatic Alarm Watch working hands",
+    "condition": "Pre-owned - Fair",
+    "price": 99.98,
+    "shipping_cost": 0.0,
+    "landed_cost": 107.4785,
+    "estimated_value_low": 250,
+    "estimated_value_high": 500,
+    "net_profit_low": 95.5215,
+    "net_profit_high": 308.0215,
+    "discount_pct": 57.0086,
+    "url": "https://www.ebay.com/itm/257814220594?_skw=Seiko+Bell-Matic&hash=item3c06eccf32:g:o1UAAeSwGV1q2-OK",
+    "image_url": "https://i.ebayimg.com/images/g/o1UAAeSwGV1q2-OK/s-l225.jpg",
+    "seller_username": "juli0369-xn9a0csd",
+    "seller_feedback_score": 54,
+    "date_found": "2026-10-23T23:40:36.860760+00:00"
+  },
+  {
+    "id": "v1|940036492430|0",
+    "category": "cameras",
+    "title": "Canon AE-1 Program 35mm SLR Film Camera Canon FD 50mm f/1.8 Lens As-Is Untested",
+    "condition": "Used",
+    "price": 80.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 86.0,
+    "estimated_value_low": 120,
+    "estimated_value_high": 220,
+    "net_profit_low": 6.5,
+    "net_profit_high": 91.5,
+    "discount_pct": 28.333333333333332,
+    "url": "https://www.ebay.com/itm/940036492430?_skw=Canon+AE-1+35mm&hash=itemdade8a8c8e:g:V3gAAeSwQa9q28v~",
+    "image_url": "https://i.ebayimg.com/images/g/V3gAAeSwQa9q28v~/s-l225.jpg",
+    "seller_username": "volt3n",
+    "seller_feedback_score": 161,
+    "date_found": "2026-10-23T23:40:36.860760+00:00"
   }
 ]
