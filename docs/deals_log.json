@@ -7642,5 +7642,24 @@
     "seller_username": "under_over",
     "seller_feedback_score": 179,
     "date_found": "2026-10-26T19:05:03.779175+00:00"
+  },
+  {
+    "id": "v1|267824647137|0",
+    "category": "cameras",
+    "title": "Canon AE-1 Program 35mm SLR Film Camera w/ FD 50mm f/1.8 Lens Untested",
+    "condition": "Used",
+    "price": 79.99,
+    "shipping_cost": 0.0,
+    "landed_cost": 85.98924999999998,
+    "estimated_value_low": 120,
+    "estimated_value_high": 220,
+    "net_profit_low": 6.510750000000016,
+    "net_profit_high": 91.51075000000002,
+    "discount_pct": 28.34229166666668,
+    "url": "https://www.ebay.com/itm/267824647137?_skw=Canon+AE-1+35mm&hash=item3e5b97cbe1:g:8ooAAeSw6N9q36wy",
+    "image_url": "https://i.ebayimg.com/images/g/8ooAAeSw6N9q36wy/s-l225.jpg",
+    "seller_username": "human-i-t",
+    "seller_feedback_score": 48017,
+    "date_found": "2026-10-26T21:17:33.729938+00:00"
   }
 ]
