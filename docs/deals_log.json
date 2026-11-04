@@ -8459,5 +8459,43 @@
     "seller_username": "lots_o_camera_stuff",
     "seller_feedback_score": 12198,
     "date_found": "2026-11-04T20:20:09.364161+00:00"
+  },
+  {
+    "id": "v1|128175439466|0",
+    "category": "watches",
+    "title": "Tissot PRX Powermatic 80 Auto 40mm Black Textured Dial Date SS 100m",
+    "condition": "New without box or papers",
+    "price": 279.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 299.925,
+    "estimated_value_low": 400,
+    "estimated_value_high": 550,
+    "net_profit_low": 30.57499999999999,
+    "net_profit_high": 158.075,
+    "discount_pct": 25.018749999999994,
+    "url": "https://www.ebay.com/itm/128175439466?_skw=Tissot+PRX+Powermatic+80&hash=item1dd7d9fe6a:g:QKgAAeSwkvZq65Lm",
+    "image_url": "https://i.ebayimg.com/images/g/QKgAAeSwkvZq65Lm/s-l225.jpg",
+    "seller_username": "broahi",
+    "seller_feedback_score": 14,
+    "date_found": "2026-11-04T22:21:22.767594+00:00"
+  },
+  {
+    "id": "v1|840093936073|0",
+    "category": "cameras",
+    "title": "Vintage Canon AE-1 Program 35mm SLR Film Camera Body Only Tested Mold Free",
+    "condition": "Used",
+    "price": 80.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 86.0,
+    "estimated_value_low": 120,
+    "estimated_value_high": 220,
+    "net_profit_low": 6.5,
+    "net_profit_high": 91.5,
+    "discount_pct": 28.333333333333332,
+    "url": "https://www.ebay.com/itm/840093936073?_skw=Canon+AE-1+35mm&hash=itemc3998029c9:g:3aEAAeSw38Nq66bG",
+    "image_url": "https://i.ebayimg.com/images/g/3aEAAeSw38Nq66bG/s-l225.jpg",
+    "seller_username": "movingmatter152",
+    "seller_feedback_score": 2461,
+    "date_found": "2026-11-04T22:21:22.767594+00:00"
   }
 ]
