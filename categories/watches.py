@@ -25,7 +25,12 @@ Beginner-friendly $200-$700 lineup (researched August 2026):
   radar relative to other vintage Seikos, good arbitrage candidates
 - Longines Conquest and Hamilton Khaki Field Titanium — added to push
   into the $300-700 tier specifically, better brand recognition/resale
-  liquidity than the entry-level picks above
+  liquidity than the entry-level picks above. NOTE: "Conquest" alone
+  matches vintage/dress quartz Conquest models too, which are a
+  DIFFERENT market segment worth much less than the modern automatic
+  sport Conquest this price band is built from — verify case size
+  (modern sport = 38-43mm) and movement (automatic, not quartz) before
+  trusting this band on a Conquest listing.
 - Bulova Jet Star — modern Precisionist quartz reissue, under-the-radar
 - Citizen Tsuyosa — very popular "Datejust homage," strong demand/
   liquidity, though used resale runs a bit below the $300 floor
@@ -44,6 +49,33 @@ Beginner-friendly $200-$700 lineup (researched August 2026):
   been depreciating. Do NOT add other Presage references to this list
   without researching that specific reference's own price trend first —
   "Presage" as a brand/line is not a reliable single price band.
+- Bulova Lunar Pilot Chronograph (96B251/96B258) — genuine heritage
+  story (the actual watch worn on the moon when astronaut David Scott's
+  Omega broke during Apollo 15), real liquid secondary market with
+  comps clustering $414-579. WatchCharts flags it "High Risk" (62/100)
+  for short-term volatility despite being up ~11% over the past year —
+  a real but liquid market, not a red flag on its own.
+- Traska Venturer GMT (added Nov 2026 to hunt one for a friend) —
+  microbrand, so a thinner market than the mainstream picks above.
+  Forum asking prices (not confirmed sales): older generations about
+  $450-600, current generations about $580-825 (mostly $650-750), Dark
+  Meteorite limited edition about $1,000-1,650. Retail is unconfirmed
+  ($720 in older reviews, $950 on the brand's site). WATCH THE
+  GENERATION: the first-generation Venturer reportedly has a rotating
+  12-hour bezel and no independent GMT hand; later versions use the
+  Miyota 9075 (true GMT). A cheap listing may be the older version —
+  confirm the 9075 / independent hour hand before buying. The scanner
+  cannot tell generations apart from the title alone.
+
+Deliberately NOT added (researched and rejected, August 2026):
+- Other microbrands (Nodus, Baltic, Unimatic, Brew, Christopher Ward)
+  — well-regarded but thin secondary markets with far fewer buyers than
+  mainstream brands; bad fit for arbitrage even when individually nice
+  watches.
+- Seiko Flightmaster (SND253) — real comps are wide and inconsistent
+  ($151-330), no confident price band could be built.
+- Anything priced mostly above $700 (Omega Seamaster, Zenith Defy,
+  Christopher Ward C63) — outside the target range/capital comfort zone.
 """
 
 from typing import List, Optional, Tuple
@@ -72,6 +104,9 @@ SEARCH_TERMS: List[str] = [
     "Citizen Tsuyosa",
     "Seiko 5 Sports GMT",
     "Seiko Presage Mojito",
+    "Bulova Lunar Pilot",
+    "Traska Venturer GMT",
+    "Traska Venturer Meteorite",
 ]
 
 # eBay category ID for Wristwatches
@@ -111,6 +146,11 @@ PRICE_BANDS = {
     "sports gmt": (280, 420),
     "mojito": (380, 480),
     "srpe45": (380, 480),
+    "lunar pilot": (414, 579),
+    "96b251": (414, 579),
+    "96b258": (414, 579),
+    "meteorite": (1000, 1300),  # Traska Dark Meteorite LE — keep before "venturer"
+    "venturer": (650, 750),
 }
 
 # Expected brand for each keyword — used to verify a listing's actual
@@ -144,6 +184,11 @@ BRAND_BY_KEYWORD = {
     "sports gmt": "Seiko",
     "mojito": "Seiko",
     "srpe45": "Seiko",
+    "lunar pilot": "Bulova",
+    "96b251": "Bulova",
+    "96b258": "Bulova",
+    "meteorite": "Traska",
+    "venturer": "Traska",
 }
 
 
