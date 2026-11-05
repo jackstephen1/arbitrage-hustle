@@ -8497,5 +8497,43 @@
     "seller_username": "movingmatter152",
     "seller_feedback_score": 2461,
     "date_found": "2026-11-04T22:21:22.767594+00:00"
+  },
+  {
+    "id": "v1|128175723590|0",
+    "category": "cameras",
+    "title": "Pentax K1000 35mm Film Manual Focus SLR Camera Body (Chrome)",
+    "condition": "Used",
+    "price": 49.99,
+    "shipping_cost": 0.0,
+    "landed_cost": 53.73925,
+    "estimated_value_low": 80,
+    "estimated_value_high": 160,
+    "net_profit_low": 4.760750000000002,
+    "net_profit_high": 72.76075,
+    "discount_pct": 32.8259375,
+    "url": "https://www.ebay.com/itm/128175723590?_skw=Pentax+K1000&hash=item1dd7de5446:g:hhIAAeSwrBhq5Nn~",
+    "image_url": "https://i.ebayimg.com/images/g/hhIAAeSwrBhq5Nn~/s-l225.jpg",
+    "seller_username": "thecameraoutlet",
+    "seller_feedback_score": 141498,
+    "date_found": "2026-11-05T01:10:00.787083+00:00"
+  },
+  {
+    "id": "v1|920106296595|0",
+    "category": "cameras",
+    "title": "Minolta X-700 SLR Camera w/ 50mm 1:1.7 Minolta Lense NOT TESTED ",
+    "condition": "Used",
+    "price": 59.45,
+    "shipping_cost": 0.0,
+    "landed_cost": 63.90875,
+    "estimated_value_low": 100,
+    "estimated_value_high": 200,
+    "net_profit_low": 11.591250000000002,
+    "net_profit_high": 96.59125,
+    "discount_pct": 36.09125,
+    "url": "https://www.ebay.com/itm/920106296595?_skw=Minolta+X-700&hash=itemd63a9be513:g:INQAAeSwJltq67xB",
+    "image_url": "https://i.ebayimg.com/images/g/INQAAeSwJltq67xB/s-l225.jpg",
+    "seller_username": "chadovaadventures1",
+    "seller_feedback_score": 161,
+    "date_found": "2026-11-05T01:10:00.787083+00:00"
   }
 ]
