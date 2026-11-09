@@ -9143,5 +9143,43 @@
     "seller_username": "heritage_japan_collectibles",
     "seller_feedback_score": 392,
     "date_found": "2026-11-09T17:17:09.296728+00:00"
+  },
+  {
+    "id": "v1|117512950626|0",
+    "category": "watches",
+    "title": "BULOVA LUNAR PILOT 96A225 APOLLO 15 262kHz CHRONOGRAPH--BLACK ON BLACK--NWOT",
+    "condition": "New without box or papers",
+    "price": 265.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 284.875,
+    "estimated_value_low": 414,
+    "estimated_value_high": 579,
+    "net_profit_low": 57.52499999999998,
+    "net_profit_high": 197.77499999999998,
+    "discount_pct": 31.18961352657005,
+    "url": "https://www.ebay.com/itm/117512950626?_skw=Bulova+Lunar+Pilot&hash=item1b5c515362:g:An0AAeSwAxRq8h2l",
+    "image_url": "https://i.ebayimg.com/images/g/An0AAeSwAxRq8h2l/s-l225.jpg",
+    "seller_username": "draymond",
+    "seller_feedback_score": 925,
+    "date_found": "2026-11-09T22:55:18.183921+00:00"
+  },
+  {
+    "id": "v1|336885680196|0",
+    "category": "cameras",
+    "title": "Minolta X-700 MPS 35mm SLR Film Camera Body Only - Untested",
+    "condition": "Used",
+    "price": 69.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 74.175,
+    "estimated_value_low": 100,
+    "estimated_value_high": 200,
+    "net_profit_low": 1.3250000000000028,
+    "net_profit_high": 86.325,
+    "discount_pct": 25.825000000000003,
+    "url": "https://www.ebay.com/itm/336885680196?_skw=Minolta+X-700&hash=item4e6ff38844:g:S2AAAeSwu1dqzo9z",
+    "image_url": "https://i.ebayimg.com/images/g/S2AAAeSwu1dqzo9z/s-l225.jpg",
+    "seller_username": "tylers-marketplace",
+    "seller_feedback_score": 625,
+    "date_found": "2026-11-09T22:55:18.183921+00:00"
   }
 ]
