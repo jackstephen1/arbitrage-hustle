@@ -9295,5 +9295,43 @@
     "seller_username": "vintageimagination",
     "seller_feedback_score": 1871,
     "date_found": "2026-11-10T20:20:58.761274+00:00"
+  },
+  {
+    "id": "v1|237175885577|0",
+    "category": "cameras",
+    "title": "Canon AE-1 PROGRAM  35mm SLR Film Camera + 50mm f/1.8 PLEASE READ",
+    "condition": "Used",
+    "price": 75.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 80.625,
+    "estimated_value_low": 120,
+    "estimated_value_high": 220,
+    "net_profit_low": 11.875,
+    "net_profit_high": 96.875,
+    "discount_pct": 32.8125,
+    "url": "https://www.ebay.com/itm/237175885577?_skw=Canon+AE-1+35mm&hash=item3738c8cf09:g:QVUAAeSwX~Nq85Lf",
+    "image_url": "https://i.ebayimg.com/images/g/QVUAAeSwX~Nq85Lf/s-l225.jpg",
+    "seller_username": "paulkris",
+    "seller_feedback_score": 4678,
+    "date_found": "2026-11-10T22:06:38.952734+00:00"
+  },
+  {
+    "id": "v1|900081011990|0",
+    "category": "cameras",
+    "title": "Olympus OM-1 35mm Film Manual Focus SLR Camera Body, Chrome (without Shoe)",
+    "condition": "Used",
+    "price": 49.99,
+    "shipping_cost": 0.0,
+    "landed_cost": 53.73925,
+    "estimated_value_low": 120,
+    "estimated_value_high": 250,
+    "net_profit_low": 38.76075,
+    "net_profit_high": 149.26075,
+    "discount_pct": 55.21729166666667,
+    "url": "https://www.ebay.com/itm/900081011990?_skw=Olympus+OM-1&hash=itemd191024d16:g:qOoAAeSwBERq84L~",
+    "image_url": "https://i.ebayimg.com/images/g/qOoAAeSwBERq84L~/s-l225.jpg",
+    "seller_username": "thecameraoutlet",
+    "seller_feedback_score": 141707,
+    "date_found": "2026-11-10T22:06:38.952734+00:00"
   }
 ]
