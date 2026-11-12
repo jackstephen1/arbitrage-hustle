@@ -1,19 +1,5 @@
 [
   {
-    "id": "v1|188738558605|0",
-    "category": "watches",
-    "title": "Seiko Alpinist Men's Black Watch - SPB117J1",
-    "price": 286.46,
-    "estimated_value_low": 400,
-    "estimated_value_high": 700,
-    "discount_pct": 28.385000000000005,
-    "url": "https://www.ebay.com/itm/188738558605?_skw=Seiko+Alpinist&hash=item2bf1b1da8d:g:BfcAAeSwxMpqcQd0&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZiPmbic%2Fr1Z1V3wzaz9nPNH3J4055lnnPRvQXeMpKeMGVIZdzNhRLrLSouptWNWaxHzPmx%2FzF%2B1To04u9AcdOXvAifT4BXZGHIrq6D2Ga3uInIZy96piirjUgmKbOvJpra1gP6rvFlBD5Zeiq7yFcK4xvipw2lP%2BuIfmRhrWAiAMO1J%2FW64vm31FZmkFZ81tCwJlloiPloaj6zeAcj5mhxULUnIYkoMOVCV1lzL6nnWl1hqB63W5DDyflvTRxPTckILF0EG0CzWO6XKk%2BHCfSHcdg9xvith3AaQe8iWeS5kA%3D%3D",
-    "image_url": "https://i.ebayimg.com/images/g/BfcAAeSwxMpqcQd0/s-l225.jpg",
-    "seller_username": "timepro-store",
-    "seller_feedback_score": 2925,
-    "date_found": "2026-08-15T20:09:19.958467+00:00"
-  },
-  {
     "id": "v1|137342227707|0",
     "category": "cameras",
     "title": "Minolta X-700 Camera SLR Camera System Lenses package,  Accessories, flash",
@@ -9378,5 +9364,24 @@
     "seller_username": "tenne_dawso",
     "seller_feedback_score": 3041,
     "date_found": "2026-11-12T20:42:01.182306+00:00"
+  },
+  {
+    "id": "v1|147677685951|0",
+    "category": "cameras",
+    "title": "Olympus OM Eyepiece/Eyecup 1 for OM-1, OM-1n and OM-2 Film Camera",
+    "condition": "Used",
+    "price": 35.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 37.625,
+    "estimated_value_low": 120,
+    "estimated_value_high": 250,
+    "net_profit_low": 54.875,
+    "net_profit_high": 165.375,
+    "discount_pct": 68.64583333333333,
+    "url": "https://www.ebay.com/itm/147677685951?_skw=Olympus+OM-1&hash=item226246a8bf:g:mEIAAeSw1PVq7HXy",
+    "image_url": "https://i.ebayimg.com/images/g/mEIAAeSw1PVq7HXy/s-l225.jpg",
+    "seller_username": "cardinalcameraused",
+    "seller_feedback_score": 22023,
+    "date_found": "2026-11-12T22:32:05.463258+00:00"
   }
 ]
