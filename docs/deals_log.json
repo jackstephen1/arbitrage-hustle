@@ -1,19 +1,5 @@
 [
   {
-    "id": "v1|398284087923|0",
-    "category": "watches",
-    "title": "Vintage 1972 SEIKO LORD MATIC WEEKDATER 5606-7070 Automatic 23J White Dial Gold",
-    "price": 139.99,
-    "estimated_value_low": 200,
-    "estimated_value_high": 450,
-    "discount_pct": 30.004999999999992,
-    "url": "https://www.ebay.com/itm/398284087923?_skw=Seiko+Lord+Matic&hash=item5cbb94e273:g:t2MAAeSwP~Vqfsf1",
-    "image_url": "https://i.ebayimg.com/images/g/t2MAAeSwP~Vqfsf1/s-l225.jpg",
-    "seller_username": "hama-luxury-archive",
-    "seller_feedback_score": 8,
-    "date_found": "2026-08-16T13:34:36.659329+00:00"
-  },
-  {
     "id": "v1|398284042557|0",
     "category": "watches",
     "title": "Vintage SEIKO LORD MATIC WEEKDATER 5606-7070 Automatic 23J Silver Day Date Issue",
@@ -9393,5 +9379,24 @@
     "seller_username": "matts.moving.sale",
     "seller_feedback_score": 7,
     "date_found": "2026-11-13T15:11:55.525526+00:00"
+  },
+  {
+    "id": "v1|237177442534|0",
+    "category": "watches",
+    "title": "CITIZEN 0510-S127718 Record Label Panda Bullhead Chronograph Men's Watch [NMINT]",
+    "condition": "Pre-owned - Good",
+    "price": 229.99,
+    "shipping_cost": 20.0,
+    "landed_cost": 268.73925,
+    "estimated_value_low": 400,
+    "estimated_value_high": 750,
+    "net_profit_low": 61.76074999999997,
+    "net_profit_high": 359.26075,
+    "discount_pct": 32.81518749999999,
+    "url": "https://www.ebay.com/itm/237177442534?_skw=Citizen+Bullhead+vintage&hash=item3738e090e6:g:hKgAAeSwndRq9KLM&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lI9mbrTNpAmxgBX7wiWwVAPV9m%2Bzo9jPM6kNHW7zZT%2FERQcwLWpD7tGG%2BlScYZrYhCHX2BoV5FPs7C1NuL5A10ht%2Fdgwi9kJ1LK9%2BQuNamC30PxoxoY9chHvWnThuRgRQFJR8Nlh1XiaIe0mdnf1BxO5fOkAn1RBSAhf0Gmgz%2F4p5y6vpEc5yZzA%2FAL6xax07MMZVYuaw4eT9uneNcR4JUvnlj3bmRWNyk8q9NdCcZR5MUN1%2BocIWuPrAWKhvdYLw2Cffzxq8QT70u7spGYLphW1bDeU2ne4gPY9LbhU3BJE72ZaEuzenazumwetcBAUI%3D",
+    "image_url": "https://i.ebayimg.com/images/g/hKgAAeSwndRq9KLM/s-l225.jpg",
+    "seller_username": "heritage_japan_collectibles",
+    "seller_feedback_score": 395,
+    "date_found": "2026-11-13T20:23:49.198018+00:00"
   }
 ]
