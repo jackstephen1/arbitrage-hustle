@@ -1,24 +1,5 @@
 [
   {
-    "id": "v1|398300923693|0",
-    "category": "watches",
-    "title": "TISSOT PRX Powermatic 80 Black Dial Silver 40mm Men's Watch",
-    "condition": "Pre-owned - Excellent",
-    "price": 300.0,
-    "shipping_cost": 0.0,
-    "landed_cost": 300.0,
-    "estimated_value_low": 400,
-    "estimated_value_high": 550,
-    "net_profit_low": 40.0,
-    "net_profit_high": 167.5,
-    "discount_pct": 25.0,
-    "url": "https://www.ebay.com/itm/398300923693?_skw=Tissot+PRX+Powermatic+80&hash=item5cbc95c72d:g:phEAAeSw3vtqhKVl",
-    "image_url": "https://i.ebayimg.com/images/g/phEAAeSw3vtqhKVl/s-l225.jpg",
-    "seller_username": "cozylabs",
-    "seller_feedback_score": 955,
-    "date_found": "2026-08-18T21:14:37.969906+00:00"
-  },
-  {
     "id": "v1|800530480827|0",
     "category": "watches",
     "title": "Seiko 5 Sports 42.5mm Men's 24-Jewel Water-Resistant Automatic Watch SRPD93",
@@ -9498,5 +9479,24 @@
     "seller_username": "iaclearance",
     "seller_feedback_score": 2025,
     "date_found": "2026-11-17T21:36:37.485283+00:00"
+  },
+  {
+    "id": "v1|377652721090|0",
+    "category": "watches",
+    "title": "SEIKO Alpinist 8F56-00F0 Quartz Perpetual Calendar Black Dial Mens Watch Junk",
+    "condition": "Pre-owned - Good",
+    "price": 200.18,
+    "shipping_cost": 42.0,
+    "landed_cost": 260.3435,
+    "estimated_value_low": 400,
+    "estimated_value_high": 700,
+    "net_profit_low": 70.1565,
+    "net_profit_high": 325.1565,
+    "discount_pct": 34.914125,
+    "url": "https://www.ebay.com/itm/377652721090?_skw=Seiko+Alpinist&hash=item57eddb35c2:g:78QAAeSwBiNq-~C7&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kSL5dDXVYjqpWIWocPtYTegjkaT0nMRy%2FEpCqKCgICJiEhMtZO8fR5yk8jfUdDIYzs31aVygJq2JKzIpkT%2BplrAs18xovlnwG1IGyPGagkNDhCmrNq7Zfd9Iutp3UPSkbqmyRwTAfrb1IHJ77ZTDvBBcb7ohw1qx3biD9H2u6T21f80x58mmU%2FGJrvDdgdsWfHGzgmrkhWoML%2FgXJddk9Y6R9FLZ6QIB5ATfmWAAK%2BoLSbrxoGsvUMTs0G%2BGM7p089xyOxdzOZgg5NwDywM8EGFGN6dc4tdWXfFDAT0vTsxw%3D%3D",
+    "image_url": "https://i.ebayimg.com/images/g/78QAAeSwBiNq-~C7/s-l225.jpg",
+    "seller_username": "kky_japan_premium_shop",
+    "seller_feedback_score": 1872,
+    "date_found": "2026-11-17T23:42:51.927006+00:00"
   }
 ]
