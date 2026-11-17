@@ -1,24 +1,5 @@
 [
   {
-    "id": "v1|327314974577|0",
-    "category": "cameras",
-    "title": "Pentax K1000 35mm SLR Film Camera Body Only Exc Condition Except Bat Cap Stuck!",
-    "condition": "Used",
-    "price": 59.0,
-    "shipping_cost": 0.0,
-    "landed_cost": 59.0,
-    "estimated_value_low": 80,
-    "estimated_value_high": 160,
-    "net_profit_low": 9.0,
-    "net_profit_high": 77.0,
-    "discount_pct": 26.25,
-    "url": "https://www.ebay.com/itm/327314974577?_skw=Pentax+K1000&hash=item4c357e2771:g:oH4AAeSwp05qg0nh",
-    "image_url": "https://i.ebayimg.com/images/g/oH4AAeSwp05qg0nh/s-l225.jpg",
-    "seller_username": "grafx1",
-    "seller_feedback_score": 2038,
-    "date_found": "2026-08-17T19:22:39.659717+00:00"
-  },
-  {
     "id": "v1|128031548845|0",
     "category": "cameras",
     "title": "Olympus OM-1 With Tokina AT-X Lens Read Description",
@@ -9498,5 +9479,24 @@
     "seller_username": "somethin_4",
     "seller_feedback_score": 26374,
     "date_found": "2026-11-16T22:47:50.140151+00:00"
+  },
+  {
+    "id": "v1|147666054454|445898539360",
+    "category": "watches",
+    "title": "Orient Watch Bambino Classic Men Luxury Birthday Gift Automatic Mechanical",
+    "condition": "New with box and papers",
+    "price": 82.91,
+    "shipping_cost": 0.0,
+    "landed_cost": 89.12825,
+    "estimated_value_low": 120,
+    "estimated_value_high": 220,
+    "net_profit_low": 3.371750000000006,
+    "net_profit_high": 88.37175,
+    "discount_pct": 25.72645833333334,
+    "url": "https://www.ebay.com/itm/147666054454?_skw=Orient+Bambino&hash=item2261952d36:g:bgcAAeSw8Ztq6yZO",
+    "image_url": "https://i.ebayimg.com/images/g/bgcAAeSw8Ztq6yZO/s-l225.jpg",
+    "seller_username": "as324706",
+    "seller_feedback_score": 363,
+    "date_found": "2026-11-17T03:18:44.091546+00:00"
   }
 ]
