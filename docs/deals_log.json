@@ -1,24 +1,5 @@
 [
   {
-    "id": "v1|227472125797|0",
-    "category": "cameras",
-    "title": "Canon AE-1 SLR 35mm SLR Film Camera Body Only - TESTED (read pls)",
-    "condition": "Used",
-    "price": 39.99,
-    "shipping_cost": 0.0,
-    "landed_cost": 39.99,
-    "estimated_value_low": 100,
-    "estimated_value_high": 180,
-    "net_profit_low": 45.01,
-    "net_profit_high": 113.00999999999999,
-    "discount_pct": 60.01,
-    "url": "https://www.ebay.com/itm/227472125797?_skw=Canon+AE-1+35mm&hash=item34f6652f65:g:6tgAAeSwwyJqe570",
-    "image_url": "https://i.ebayimg.com/images/g/6tgAAeSwwyJqe570/s-l225.jpg",
-    "seller_username": "jedvintage",
-    "seller_feedback_score": 3294,
-    "date_found": "2026-08-20T07:43:57.505885+00:00"
-  },
-  {
     "id": "v1|227474898424|0",
     "category": "cameras",
     "title": "Pentax K1000 35mm SLR Film Camera Body - Works (read)",
@@ -9498,5 +9479,24 @@
     "seller_username": "japan_watch_store",
     "seller_feedback_score": 194,
     "date_found": "2026-11-21T21:59:23.732936+00:00"
+  },
+  {
+    "id": "v1|257864760659|0",
+    "category": "cameras",
+    "title": "Minolta X-700 35mm SLR Film Camera w/ MD 50mm f/2 Lens   Untested",
+    "condition": "Used",
+    "price": 60.0,
+    "shipping_cost": 0.0,
+    "landed_cost": 64.5,
+    "estimated_value_low": 100,
+    "estimated_value_high": 200,
+    "net_profit_low": 11.0,
+    "net_profit_high": 96.0,
+    "discount_pct": 35.5,
+    "url": "https://www.ebay.com/itm/257864760659?_skw=Minolta+X-700&hash=item3c09effd53:g:j4UAAeSww4BrAiMz",
+    "image_url": "https://i.ebayimg.com/images/g/j4UAAeSww4BrAiMz/s-l225.jpg",
+    "seller_username": "greatstuffgooddeals",
+    "seller_feedback_score": 874,
+    "date_found": "2026-11-22T00:47:24.462104+00:00"
   }
 ]
