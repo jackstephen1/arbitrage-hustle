@@ -1,24 +1,5 @@
 [
   {
-    "id": "v1|227474898424|0",
-    "category": "cameras",
-    "title": "Pentax K1000 35mm SLR Film Camera Body - Works (read)",
-    "condition": "Used",
-    "price": 49.99,
-    "shipping_cost": 0.0,
-    "landed_cost": 49.99,
-    "estimated_value_low": 80,
-    "estimated_value_high": 160,
-    "net_profit_low": 18.009999999999998,
-    "net_profit_high": 86.00999999999999,
-    "discount_pct": 37.512499999999996,
-    "url": "https://www.ebay.com/itm/227474898424?_skw=Pentax+K1000&hash=item34f68f7df8:g:nkMAAeSwsqlqfl4~&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGY1fTNl0xoijco9PVcbtqyxsvIi37Jws572LpPxXlQ8poTWO9nuFvM1eViJCBIQ2BAMz5OZlELxSlTT6qHtyzALfb8AlySgBzrqN7mlMZ7H7Y783N40unZwKftwbycWbCdsYiK0v8cATnAdeYkm1FKfmOInmRDejEgdHDzkOf7i%2BS60cUKzvbqqtIREZhx%2FuF3tTRNB50qYDZh1SPTQBXm48fVc%2F30KI%2FeLj3VhVW17jbUZ3wy92dipypB%2FOQpf1zHfr9shSV5gxsCwv8WC%2Bb4JNtbCQpBTxdCibLf8MG2yow%3D%3D",
-    "image_url": "https://i.ebayimg.com/images/g/nkMAAeSwsqlqfl4~/s-l225.jpg",
-    "seller_username": "jedvintage",
-    "seller_feedback_score": 3294,
-    "date_found": "2026-08-20T07:43:57.505885+00:00"
-  },
-  {
     "id": "v1|227472092958|0",
     "category": "cameras",
     "title": "Asahi Pentax K1000 SE SLR 35mm Film Camera Body Only - Tested (READ)",
@@ -9498,5 +9479,24 @@
     "seller_username": "greatstuffgooddeals",
     "seller_feedback_score": 874,
     "date_found": "2026-11-22T00:47:24.462104+00:00"
+  },
+  {
+    "id": "v1|307295632109|0",
+    "category": "cameras",
+    "title": "MINOLTA X-700 MPS Camera Body Works",
+    "condition": "Used",
+    "price": 64.95,
+    "shipping_cost": 0.0,
+    "landed_cost": 69.82125,
+    "estimated_value_low": 100,
+    "estimated_value_high": 200,
+    "net_profit_low": 5.678749999999994,
+    "net_profit_high": 90.67875,
+    "discount_pct": 30.178749999999994,
+    "url": "https://www.ebay.com/itm/307295632109?_skw=Minolta+X-700&hash=item478c3f3aed:g:7fkAAeSwewprAwwX",
+    "image_url": "https://i.ebayimg.com/images/g/7fkAAeSwewprAwwX/s-l225.jpg",
+    "seller_username": "lovebugjj",
+    "seller_feedback_score": 8870,
+    "date_found": "2026-11-22T20:13:16.864885+00:00"
   }
 ]
