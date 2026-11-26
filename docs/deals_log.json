@@ -1,24 +1,5 @@
 [
   {
-    "id": "v1|376909705011|0",
-    "category": "cameras",
-    "title": "Minolta X-700 35mm Film Camera w/ MD 200mm 1:4 Lens & Strap - Untested",
-    "condition": "Used",
-    "price": 31.25,
-    "shipping_cost": 10.0,
-    "landed_cost": 41.25,
-    "estimated_value_low": 100,
-    "estimated_value_high": 200,
-    "net_profit_low": 43.75,
-    "net_profit_high": 128.75,
-    "discount_pct": 58.75,
-    "url": "https://www.ebay.com/itm/376909705011?_skw=Minolta+X-700&hash=item57c191af33:g:j0YAAeSw7WZpem26",
-    "image_url": "https://i.ebayimg.com/images/g/j0YAAeSw7WZpem26/s-l225.jpg",
-    "seller_username": "mandyrodgers",
-    "seller_feedback_score": 3204,
-    "date_found": "2026-08-22T07:34:56.869362+00:00"
-  },
-  {
     "id": "v1|206510015613|0",
     "category": "watches",
     "title": "Tissot PRX Powermatic 80 40mm NAVY WAFFLE DIAL",
@@ -9498,5 +9479,24 @@
     "seller_username": "rcn1984",
     "seller_feedback_score": 5405,
     "date_found": "2026-11-25T22:13:57.883958+00:00"
+  },
+  {
+    "id": "v1|366838105480|0",
+    "category": "cameras",
+    "title": "VINTAGE Canon AE-1 SLR 35mm Film Camera w/ Canon Lens FD 50mm f/1.8 CLEAN  (8)",
+    "condition": "Used",
+    "price": 49.95,
+    "shipping_cost": 0.0,
+    "landed_cost": 53.69625,
+    "estimated_value_low": 100,
+    "estimated_value_high": 180,
+    "net_profit_low": 21.80375,
+    "net_profit_high": 89.80375000000001,
+    "discount_pct": 46.30375,
+    "url": "https://www.ebay.com/itm/366838105480?_skw=Canon+AE-1+35mm&hash=item5569414588:g:COsAAeSwmuZrBzzJ",
+    "image_url": "https://i.ebayimg.com/images/g/COsAAeSwmuZrBzzJ/s-l225.jpg",
+    "seller_username": "hillbullyz",
+    "seller_feedback_score": 11531,
+    "date_found": "2026-11-26T00:48:52.987239+00:00"
   }
 ]
